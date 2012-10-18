@@ -30,7 +30,6 @@ get_header(); ?>
         <li>And More</li>
       </ul>
       
-
         <p class="notice">CELT (Registered Charity CHY 14519) welcome sponsorship of projects, programmes and events. Sponsors will benefit from any media coverage and will be included in our brochures and newsletters. Please get in touch if you can help - you can make an important contribution to environmental education and training.</p>
 
       

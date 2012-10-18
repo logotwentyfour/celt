@@ -126,14 +126,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   padding: 2em;
   background-color: #fff;
+  font-family: helvetica, arial, sans-serif;
 }
 
-/* line 41, style.scss */
+/* line 42, style.scss */
 p, ul li {
   color: #333333;
 }
 
-/* line 45, style.scss */
+/* line 46, style.scss */
 a, a:link, a:visited {
   color: #555555;
   text-decoration: none;
@@ -142,46 +143,46 @@ a, a:link, a:visited {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 50, style.scss */
+/* line 51, style.scss */
 a:hover, a:active, a:focus, a:link:hover, a:link:active, a:link:focus, a:visited:hover, a:visited:active, a:visited:focus {
   color: #0b5394;
 }
 
-/* line 55, style.scss */
+/* line 56, style.scss */
 i {
   font-style: normal;
 }
 
-/* line 59, style.scss */
+/* line 60, style.scss */
 strong {
   font-weight: normal;
 }
 
-/* line 63, style.scss */
+/* line 64, style.scss */
 .wrapper {
   overflow: hidden;
   *zoom: 1;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
-  /* line 63, style.scss */
+  /* line 64, style.scss */
   .wrapper {
     width: 768px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 63, style.scss */
+  /* line 64, style.scss */
   .wrapper {
     width: 1024px;
   }
 }
 
-/* line 77, style.scss */
+/* line 78, style.scss */
 [role="banner"] {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 81, style.scss */
+/* line 82, style.scss */
 [role="banner"] h1 {
   background-image: url("/wp-content/uploads/2012/10/celt-logo-01@1.jpg");
   height: 88px;
@@ -189,37 +190,52 @@ strong {
   width: 300px;
 }
 @media only screen and (min-width: 480px) {
-  /* line 81, style.scss */
+  /* line 82, style.scss */
   [role="banner"] h1 {
     margin: 0;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-  /* line 81, style.scss */
+  /* line 82, style.scss */
   [role="banner"] h1 {
     background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
     background-size: 100%;
   }
 }
-/* line 99, style.scss */
+/* line 100, style.scss */
 [role="banner"] h2 {
   font-size: 1.375em;
   line-height: 2.182em;
 }
 
+/* line 106, style.scss */
+.top-nav li {
+  display: inline;
+}
+
 /* line 110, style.scss */
+.top-nav {
+  background-color: #6CA73B;
+}
+
+/* line 116, style.scss */
+.latest-news {
+  background-color: #E9FDA7;
+}
+
+/* line 121, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 114, style.scss */
+/* line 125, style.scss */
 .p404 h1 {
   font-size: 8.313em;
   line-height: 1.083em;
   color: #0b5394;
   line-height: 1em;
 }
-/* line 120, style.scss */
+/* line 131, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.182em;
@@ -227,31 +243,31 @@ strong {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 127, style.scss */
+/* line 138, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #0b5394;
   line-height: 1.25em;
 }
-/* line 133, style.scss */
+/* line 144, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 139, style.scss */
+/* line 150, style.scss */
 [role='contentinfo'] {
   margin: 2em 0;
 }
-/* line 143, style.scss */
+/* line 154, style.scss */
 [role='contentinfo'] ul {
   margin-left: -1.5em;
 }
-/* line 148, style.scss */
+/* line 159, style.scss */
 [role='contentinfo'] ul li {
   margin-left: 1.5em;
 }
-/* line 153, style.scss */
+/* line 164, style.scss */
 [role='contentinfo'] a, [role='contentinfo'] a:link, [role='contentinfo'] a:visited {
   color: #595959;
   -webkit-transition: all 0.2s ease-in-out;
@@ -259,7 +275,7 @@ strong {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 157, style.scss */
+/* line 168, style.scss */
 [role='contentinfo'] a:hover, [role='contentinfo'] a:active, [role='contentinfo'] a:focus, [role='contentinfo'] a:link:hover, [role='contentinfo'] a:link:active, [role='contentinfo'] a:link:focus, [role='contentinfo'] a:visited:hover, [role='contentinfo'] a:visited:active, [role='contentinfo'] a:visited:focus {
   color: #0b5394;
 }
