@@ -19,28 +19,22 @@ get_header(); ?>
         <li>Ecology</li>
         <li>Wildlife surveys</li>
         <li>Schools projects</li>
-      </ul>
-      <ul>
         <li>Nature conservation</li>
         <li>Renewable energy</li>
         <li>Native Tree Nursery</li>
-      </ul>
-      <ul>
         <li>Traditional Skills</li>
         <li>Native trees, Agroforestry</li>
         <li>Environmental education</li>
-      </ul>
-      <ul>
         <li>Planting</li>
         <li>Coppice crafts</li>
         <li>And More</li>
       </ul>
 
-      <div class="home-page-text-above-footer">
-        <p>CELT (Registered Charity CHY 14519) welcome sponsorship of projects, programmes and events. Sponsors will benefit from any media coverage and will be included in our brochures and newsletters. Please get in touch if you can help - you can make an important contribution to environmental education and training.</p>
-      </div>
       
-  <div class="latest-news"> 
+        <p class=".notice">CELT (Registered Charity CHY 14519) welcome sponsorship of projects, programmes and events. Sponsors will benefit from any media coverage and will be included in our brochures and newsletters. Please get in touch if you can help - you can make an important contribution to environmental education and training.</p>
+      
+      
+  <section class="latest-news"> 
 
     <article id="post-<?php the_ID(); ?>" class="index-article">
       <header class="entry-header">
@@ -76,7 +70,7 @@ get_header(); ?>
      <?php endwhile; ?>
     <?php endif; ?>
 
-  </div>
+  </section>
 
 <?php get_sidebar(); ?>
 
