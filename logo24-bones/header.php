@@ -60,8 +60,8 @@
       <hgroup>
         <a href="/" title="Return to the home page">
           <h1>
-            The CELT
-            <img src="<?php bloginfo('template_directory'); ?>/library/images/logo@2x.png" alt="Website name" class="visually-hidden"/>
+            CELT
+            <img src="<?php bloginfo('template_directory'); ?>/library/images/logo@2x.png" alt="CELT" class="visually-hidden"/>
           </h1>
         </a>
       </hgroup>
@@ -71,4 +71,6 @@
       <?php bones_main_nav(); ?>
     </nav>
 
-    <img src="/wp-content/uploads/2012/10/celt-slider-01.jpg"/>
+    <div class="slider">
+      <img src="/wp-content/uploads/2012/10/celt-slider-01@1.jpg"/>
+    </div>
