@@ -6,12 +6,12 @@ get_header(); ?>
   
   <?php if ( have_posts() ) : ?>
 
+    <?php while ( have_posts() ) : the_post(); ?>
+
     <section role="main">
       <header>
         <h1>Welcome</h1>
       </header>
-
-      <?php while ( have_posts() ) : the_post(); ?>
 
       <p>CELT is a community group and registered charity involved in:</p>
 
@@ -29,49 +29,53 @@ get_header(); ?>
         <li>Coppice crafts</li>
         <li>And More</li>
       </ul>
-
       
+<<<<<<< HEAD
         <p class="notice">CELT (Registered Charity CHY 14519) welcome sponsorship of projects, programmes and events. Sponsors will benefit from any media coverage and will be included in our brochures and newsletters. Please get in touch if you can help - you can make an important contribution to environmental education and training.</p>
+=======
+      <p class="notice">CELT (Registered Charity CHY 14519) welcome sponsorship of projects, programmes and events. Sponsors will benefit from any media coverage and will be included in our brochures and newsletters. Please get in touch if you can help - you can make an important contribution to environmental education and training.</p>
+>>>>>>> origin/master
       
-      
-  <section class="latest-news"> 
+      <section class="latest-news"> 
 
-    <article id="post-<?php the_ID(); ?>" class="index-article">
-      <header class="entry-header">
-        <a href='<?php the_permalink() ?>'
-        rel='bookmark' title='<?php the_title(); ?>'>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
-        </a>
+        <article id="post-<?php the_ID(); ?>">
+          <header class="entry-header">
+            <a href='<?php the_permalink() ?>'
+            rel='bookmark' title='<?php the_title(); ?>'>
+              <h1 class="entry-title"><?php the_title(); ?></h1>
+            </a>
         
-        <?php if ( 'post' == get_post_type() ) : ?>
+            <?php if ( 'post' == get_post_type() ) : ?>
         
-        <div class="entry-meta">
-          <div class="post-author">
-            <a href="<?php echo get_the_author_meta( 'user_url' ); ?>" title="Learn more about me"><?php the_author() ?></a>
-            <?php read_time(); ?>
+            <div class="entry-meta">
+              <div class="post-author">
+                <a href="<?php echo get_the_author_meta( 'user_url' ); ?>" title="Learn more about me"><?php the_author() ?></a>
+                <?php read_time(); ?>
+              </div>
+              <div class="topics">
+                <h3>Topics:</h3> <?php echo get_the_category_list(); ?>
+              </div>
+            </div><!-- .entry-meta -->
+        
+            <?php endif; ?>
+          </header><!-- .entry-header -->
+
+          <div class="entry-content">
+            <?php the_excerpt(); ?>
+          </div><!-- .entry-content -->
+
+          <div class="entry-utility">
+            Written <time pubdate datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j Y'); ?></time>
           </div>
-          <div class="topics">
-            <h3>Topics:</h3> <?php echo get_the_category_list(); ?>
-          </div>
-        </div><!-- .entry-meta -->
+        </article>
         
-        <?php endif; ?>
-      </header><!-- .entry-header -->
+      </section> <?php # /latest-news ?>
 
-      <div class="entry-content">
-        <?php the_excerpt(); ?>
-      </div><!-- .entry-content -->
-
-      <div class="entry-utility">
-        Written <time pubdate datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j Y'); ?></time>
-      </div>
-    </article>
-
-     <?php endwhile; ?>
-    <?php endif; ?>
-
-  </section>
+    </section> <?php # /main ?>
+    
+   <?php endwhile; ?>
+   
+  <?php endif; ?>
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
