@@ -71,4 +71,6 @@
       <?php bones_main_nav(); ?>
     </nav>
 
-    <img src="/wp-content/uploads/2012/10/celt-slider-01.jpg"/>
+    <div class="slider">
+      <img src="/wp-content/uploads/2012/10/celt-slider-01@1.jpg"/>
+    </div>

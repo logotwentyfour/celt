@@ -5,7 +5,6 @@ Template Name: Home Page
 get_header(); ?>
   
   <?php if ( have_posts() ) : ?>
- 
 
     <section role="main">
       <header>
@@ -37,14 +36,11 @@ get_header(); ?>
         <li>And More</li>
       </ul>
 
-
-
       <div class="home-page-text-above-footer">
         <p>CELT (Registered Charity CHY 14519) welcome sponsorship of projects, programmes and events. Sponsors will benefit from any media coverage and will be included in our brochures and newsletters. Please get in touch if you can help - you can make an important contribution to environmental education and training.</p>
       </div>
       
-
-
+  <div class="latest-news"> 
 
     <article id="post-<?php the_ID(); ?>" class="index-article">
       <header class="entry-header">
@@ -80,9 +76,7 @@ get_header(); ?>
      <?php endwhile; ?>
     <?php endif; ?>
 
-
-
- 
+  </div>
 
 <?php get_sidebar(); ?>
 
