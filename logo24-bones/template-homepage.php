@@ -7,6 +7,12 @@ get_header(); ?>
   <?php if ( have_posts() ) : ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
+      
+      
+      
+    <?php endwhile; ?>
+
+  <?php endif; ?>
 
     <section role="main">
       <header>
@@ -33,45 +39,28 @@ get_header(); ?>
       <p class="notice">CELT (Registered Charity CHY 14519) welcome sponsorship of projects, programmes and events. Sponsors will benefit from any media coverage and will be included in our brochures and newsletters. Please get in touch if you can help - you can make an important contribution to environmental education and training.</p>
       
       <section class="latest-news"> 
-
-        <article id="post-<?php the_ID(); ?>">
-          <header class="entry-header">
-            <a href='<?php the_permalink() ?>'
-            rel='bookmark' title='<?php the_title(); ?>'>
-              <h1 class="entry-title"><?php the_title(); ?></h1>
-            </a>
         
-            <?php if ( 'post' == get_post_type() ) : ?>
-        
-            <div class="entry-meta">
-              <div class="post-author">
-                <a href="<?php echo get_the_author_meta( 'user_url' ); ?>" title="Learn more about me"><?php the_author() ?></a>
-                <?php read_time(); ?>
-              </div>
-              <div class="topics">
-                <h3>Topics:</h3> <?php echo get_the_category_list(); ?>
-              </div>
-            </div><!-- .entry-meta -->
-        
-            <?php endif; ?>
-          </header><!-- .entry-header -->
-
-          <div class="entry-content">
-            <?php the_excerpt(); ?>
-          </div><!-- .entry-content -->
-
-          <div class="entry-utility">
-            Written <time pubdate datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j Y'); ?></time>
-          </div>
+      <?php 
+      query_posts('posts_per_page=5'); 
+      if(have_posts()):
+        while(have_posts()): the_post();
+      ?>
+        <article>
+          <h3><a href='<?php the_permalink() ?>'
+          rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h2>
+          
+          <time pubdate datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j Y'); ?></time>
+          
+          <?php the_excerpt(); ?>
         </article>
-        
+      <?php
+        endwhile;
+      endif; 
+      ?>
+
       </section> <?php # /latest-news ?>
 
     </section> <?php # /main ?>
-    
-   <?php endwhile; ?>
-   
-  <?php endif; ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
