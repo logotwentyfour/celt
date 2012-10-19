@@ -24,6 +24,7 @@ body {
   @include primary-typeface;
   padding: 2em;
   background-color: #fff;
+  font-family: helvetica, arial, sans-serif;
 }
 
 p, ul li {
@@ -90,9 +91,19 @@ strong {
 }
 
   //The Nav/Menu bar
+.top-nav li {
+	display: inline;
+}
 
+.top-nav{
+	background-color: #6CA73B;
+}
 
+// Latest news
 
+.latest-news{
+	background-color: #E9FDA7;
+}
 
 // 404 Styles
 .p404 {

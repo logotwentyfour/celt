@@ -116,14 +116,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   padding: 2em;
   background-color: #fff;
+  font-family: helvetica, arial, sans-serif;
 }
 
-/* line 29, style.scss */
+/* line 30, style.scss */
 p, ul li {
   color: #333333;
 }
 
-/* line 33, style.scss */
+/* line 34, style.scss */
 a, a:link, a:visited {
   color: #555555;
   text-decoration: none;
@@ -132,46 +133,46 @@ a, a:link, a:visited {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 38, style.scss */
+/* line 39, style.scss */
 a:hover, a:active, a:focus, a:link:hover, a:link:active, a:link:focus, a:visited:hover, a:visited:active, a:visited:focus {
   color: #0b5394;
 }
 
-/* line 43, style.scss */
+/* line 44, style.scss */
 i {
   font-style: normal;
 }
 
-/* line 47, style.scss */
+/* line 48, style.scss */
 strong {
   font-weight: normal;
 }
 
-/* line 51, style.scss */
+/* line 52, style.scss */
 .wrapper {
   overflow: hidden;
   *zoom: 1;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
-  /* line 51, style.scss */
+  /* line 52, style.scss */
   .wrapper {
     max-width: 768px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 51, style.scss */
+  /* line 52, style.scss */
   .wrapper {
     max-width: 1024px;
   }
 }
 
-/* line 65, style.scss */
+/* line 66, style.scss */
 [role="banner"] {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 69, style.scss */
+/* line 70, style.scss */
 [role="banner"] h1 {
   background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
   height: 44px;
@@ -179,37 +180,52 @@ strong {
   width: 152px;
 }
 @media only screen and (min-width: 480px) {
-  /* line 69, style.scss */
+  /* line 70, style.scss */
   [role="banner"] h1 {
     margin: 0;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 69, style.scss */
+  /* line 70, style.scss */
   [role="banner"] h1 {
     background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
     background-size: 100%;
   }
 }
-/* line 87, style.scss */
+/* line 88, style.scss */
 [role="banner"] h2 {
   font-size: 1.375em;
   line-height: 2.18182em;
 }
 
+/* line 94, style.scss */
+.top-nav li {
+  display: inline;
+}
+
 /* line 98, style.scss */
+.top-nav {
+  background-color: #6CA73B;
+}
+
+/* line 104, style.scss */
+.latest-news {
+  background-color: #E9FDA7;
+}
+
+/* line 109, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 102, style.scss */
+/* line 113, style.scss */
 .p404 h1 {
   font-size: 8.3125em;
   line-height: 1.08271em;
   color: #0b5394;
   line-height: 1em;
 }
-/* line 108, style.scss */
+/* line 119, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.18182em;
@@ -217,31 +233,31 @@ strong {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 115, style.scss */
+/* line 126, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #0b5394;
   line-height: 1.25em;
 }
-/* line 121, style.scss */
+/* line 132, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 127, style.scss */
+/* line 138, style.scss */
 [role='contentinfo'] {
   margin: 2em 0;
 }
-/* line 131, style.scss */
+/* line 142, style.scss */
 [role='contentinfo'] ul {
   margin-left: -1.5em;
 }
-/* line 136, style.scss */
+/* line 147, style.scss */
 [role='contentinfo'] ul li {
   margin-left: 1.5em;
 }
-/* line 141, style.scss */
+/* line 152, style.scss */
 [role='contentinfo'] a, [role='contentinfo'] a:link, [role='contentinfo'] a:visited {
   color: #595959;
   -webkit-transition: all 0.2s ease-in-out;
@@ -249,7 +265,7 @@ strong {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 145, style.scss */
+/* line 156, style.scss */
 [role='contentinfo'] a:hover, [role='contentinfo'] a:active, [role='contentinfo'] a:focus, [role='contentinfo'] a:link:hover, [role='contentinfo'] a:link:active, [role='contentinfo'] a:link:focus, [role='contentinfo'] a:visited:hover, [role='contentinfo'] a:visited:active, [role='contentinfo'] a:visited:focus {
   color: #0b5394;
 }
