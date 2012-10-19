@@ -24,7 +24,6 @@ body {
   @include primary-typeface;
   padding: 2em;
   background-color: #fff;
-  font-family: helvetica, arial, sans-serif;
 }
 
 p, ul li {
@@ -68,19 +67,22 @@ strong {
   
   // The logo
   h1 {
-    background-image: url('/wp-content/themes/logo24-bones/library/images/logo.png');
-    height: 44px;
-    margin: 0 auto;
-    @extend .ir;
-    width: 152px;
-    
-    @media only screen and (min-width: 480px) {
-      margin: 0;
-    }
-    
-    @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-      background-image: url('/wp-content/themes/logo24-bones/library/images/logo@2x.png');
-      background-size: 100%;
+    a, a:link, a:visited {
+      background-image: url('/wp-content/themes/logo24-bones/library/images/logo.png');
+      height: pem(44px);
+      margin: pem(5px) auto pem(39px) auto;
+      @extend .ir;
+      width: pem(152px);
+
+      // (480 @ 16px)
+      @media only screen and (min-width: 30em) {
+        margin-left: pem(47px);
+      }
+
+      @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+        background-image: url('/wp-content/themes/logo24-bones/library/images/logo@2x.png');
+        background-size: 100%;
+      }
     }
   }
   
@@ -90,19 +92,35 @@ strong {
   }
 }
 
-  //The Nav/Menu bar
-.top-nav li {
-	display: inline;
+// <ul> The Nav/Menu bar
+.top-nav {
+  background-color: $brand-color;
+  @include clearfix;
+  
+  li {
+    border-right: 1px solid $secondary-color;
+    float: left;
+    
+    a, a:link, a:visited {
+      color: #fff;
+      @include inline-block;
+      padding: pem(7px) pem(18px);
+    }
+    
+    a:hover, a:focus, a:active {
+      background: $secondary-color;
+    }
+  }
 }
 
-.top-nav{
-	background-color: #6CA73B;
+// Temporarily hide the sub menu.
+.sub-menu {
+  display: none;
 }
 
 // Latest news
-
 .latest-news{
-	background-color: #E9FDA7;
+  background-color: #E9FDA7;
 }
 
 // 404 Styles
