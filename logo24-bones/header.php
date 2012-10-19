@@ -61,7 +61,7 @@
         <a href="/" title="Return to the home page">
           <h1>
             CELT
-            <img src="<?php bloginfo('template_directory'); ?>/library/images/logo@2x.png" alt="CELT" class="visually-hidden"/>
+            <img src="<?php bloginfo('template_directory'); ?>/library/images/logo.png" alt="CELT" class="visually-hidden"/>
           </h1>
         </a>
       </hgroup>
