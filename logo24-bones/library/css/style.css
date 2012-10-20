@@ -230,18 +230,18 @@ strong {
 }
 
 /* line 96, style.scss */
-.top-nav {
+.top-nav, .footer-nav {
   background-color: #6ba74d;
   overflow: hidden;
   *zoom: 1;
 }
 /* line 100, style.scss */
-.top-nav li {
+.top-nav li, .footer-nav li {
   border-right: 1px solid #4c9644;
   float: left;
 }
 /* line 104, style.scss */
-.top-nav li a, .top-nav li a:link, .top-nav li a:visited {
+.top-nav li a, .top-nav li a:link, .top-nav li a:visited, .footer-nav li a, .footer-nav li a:link, .footer-nav li a:visited {
   color: #fff;
   display: -moz-inline-stack;
   display: inline-block;
@@ -252,7 +252,7 @@ strong {
   padding: 0.4375em 1.125em;
 }
 /* line 110, style.scss */
-.top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active {
+.top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active, .footer-nav li a:hover, .footer-nav li a:focus, .footer-nav li a:active {
   background: #4c9644;
 }
 
@@ -266,19 +266,36 @@ strong {
   background-color: #E9FDA7;
 }
 
-/* line 127, style.scss */
+/* line 128, style.scss */
+[role="complementary"] ul {
+  background: #ffed91;
+  padding: 0.875em 1.125em 1.6875em 1.125em;
+}
+/* line 133, style.scss */
+[role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
+  border-bottom: 1px solid #cb8836;
+  color: #a46e2a;
+  display: block;
+  padding: 0.625em 0 0.3125em 0;
+}
+/* line 140, style.scss */
+[role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
+  background: #ffe978;
+}
+
+/* line 148, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 131, style.scss */
+/* line 152, style.scss */
 .p404 h1 {
   font-size: 8.3125em;
   line-height: 1.08271em;
   color: #6ba74d;
   line-height: 1em;
 }
-/* line 137, style.scss */
+/* line 158, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.18182em;
@@ -286,41 +303,21 @@ strong {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 144, style.scss */
+/* line 165, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-/* line 150, style.scss */
+/* line 171, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 156, style.scss */
+/* line 177, style.scss */
 [role='contentinfo'] {
-  margin: 2em 0;
-}
-/* line 160, style.scss */
-[role='contentinfo'] ul {
-  margin-left: -1.5em;
-}
-/* line 165, style.scss */
-[role='contentinfo'] ul li {
-  margin-left: 1.5em;
-}
-/* line 170, style.scss */
-[role='contentinfo'] a, [role='contentinfo'] a:link, [role='contentinfo'] a:visited {
-  color: #595959;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 174, style.scss */
-[role='contentinfo'] a:hover, [role='contentinfo'] a:active, [role='contentinfo'] a:focus, [role='contentinfo'] a:link:hover, [role='contentinfo'] a:link:active, [role='contentinfo'] a:link:focus, [role='contentinfo'] a:visited:hover, [role='contentinfo'] a:visited:active, [role='contentinfo'] a:visited:focus {
-  color: #6ba74d;
+  margin-top: 1.5em;
 }
 
 /*.lt-ie9 {

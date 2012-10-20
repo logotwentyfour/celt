@@ -93,7 +93,7 @@ strong {
 }
 
 // <ul> The Nav/Menu bar
-.top-nav {
+.top-nav, .footer-nav {
   background-color: $brand-color;
   @include clearfix;
   
@@ -121,6 +121,27 @@ strong {
 // Latest news
 .latest-news{
   background-color: #E9FDA7;
+}
+
+// Sidebar
+[role="complementary"] {
+  ul {
+    background: $tertiary-color;
+    padding: pem(14px) pem(18px) pem(27px) pem(18px);
+    
+    li {
+      a, a:link, a:visited {
+        border-bottom: 1px solid lighten($quaternary-color,10%);
+        color: $quaternary-color;
+        display: block;
+        padding: pem(10px) 0 pem(5px) 0;
+      }
+      
+      a:hover, a:focus, a:active {
+        background: darken($tertiary-color,5%);
+      }
+    }
+  }
 }
 
 // 404 Styles
@@ -154,27 +175,7 @@ strong {
 
 //<footer>
 [role='contentinfo'] {
-  margin: 2em 0;
-  
-  // Plain horizontal list
-  ul {
-  //  @include no-bullets;
-  //  @include inline-block-list;
-    margin-left: -1.5em;
-    
-    li {
-      margin-left: 1.5em;
-    }
-  }
-  
-  a, a:link, a:visited {
-    color: $subtle;
-    @include transition(all, .2s, ease-in-out);
-    
-    &:hover, &:active, &:focus {
-      color: $brand-color;
-    }
-  }
+  margin-top: 1.5em;
 }
 
 // Fix IE7, 8 and 9
