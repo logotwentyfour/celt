@@ -4,7 +4,9 @@ Template Name: Home Page
 */
 get_header(); ?>
 
-    <section role="main">
+<?php get_sidebar(); ?>
+
+    <section role="main" class="m-all t2 d2-d4">
       
       <?php if ( have_posts() ) : ?>
 
@@ -40,5 +42,4 @@ get_header(); ?>
 
     </section> <?php # /main ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

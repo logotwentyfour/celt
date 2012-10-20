@@ -64,19 +64,6 @@ strong {
   
   @media only screen and (min-width: 768px) {
     max-width: 1024px;
-
-
-    [role="main"] {
-      margin-left: 21em;
-    }
-
-    .sidebar1{
-      width: 17em;
-      position: absolute;
-      display: block;
-      top: 415px;
-    }
-
   }
 }
 
@@ -133,34 +120,20 @@ strong {
   }
 }
 
-// Temporarily hide the sub menu.
-.sub-menu {
-  display: none;
-}
-
 // Latest news
-.latest-news{
+.latest-news {
   background-color: #E9FDA7;
   margin-top: 20px;
 }
 
-// sidebar
-
-.sidebar1{
-  padding-top: 20px;
-}
-
 // Home page
 
-.list{
-  list-style-type:disc;
-}
-.list li{
-  display: inline-block;
-}
-.home-header{
-  margin-top: 1em;
-  margin-bottom: 1em;
+.list {
+  list-style-type: disc;
+  
+  li {
+    display: inline-block;
+  }
 }
 
 // Sidebar
@@ -213,6 +186,7 @@ strong {
 
 //<footer>
 [role='contentinfo'] {
+  @include gridset-all;
   margin-top: 1.5em;
 }
 
