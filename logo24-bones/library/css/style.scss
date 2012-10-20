@@ -40,6 +40,12 @@ a, a:link, a:visited {
   }
 }
 
+h1{
+  @include adjust-font-size-to(24px);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 i {
   font-style: normal;
 }
@@ -58,8 +64,22 @@ strong {
   
   @media only screen and (min-width: 768px) {
     max-width: 1024px;
+
+
+    [role="main"] {
+      margin-left: 21em;
+    }
+
+    .sidebar1{
+      width: 17em;
+      position: absolute;
+      display: block;
+      top: 415px;
+    }
+
   }
 }
+
 
 // <header>
 [role="banner"] {
@@ -121,6 +141,26 @@ strong {
 // Latest news
 .latest-news{
   background-color: #E9FDA7;
+  margin-top: 20px;
+}
+
+// sidebar
+
+.sidebar1{
+  padding-top: 20px;
+}
+
+// Home page
+
+.list{
+  list-style-type:disc;
+}
+.list li{
+  display: inline-block;
+}
+.home-header{
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 // Sidebar
@@ -151,8 +191,6 @@ strong {
   
   h1 {
     @include adjust-font-size-to(133px);
-    color: $brand-color;
-    line-height: 1em;
   }
   
   h2 {
