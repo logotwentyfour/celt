@@ -102,13 +102,20 @@ strong {
 // <ul> The Nav/Menu bar
 .top-nav, .footer-nav {
   background-color: $brand-color;
-  @include clearfix;
   
   li {
-    border-right: 1px solid $secondary-color;
-    float: left;
+    display: inline;
+    position: relative;
+    
+    // open the sub menu
+    &:hover {
+      .sub-menu {
+        display: block;
+      }
+    }
     
     a, a:link, a:visited {
+      border-right: 1px solid $secondary-color;
       color: #fff;
       @include inline-block;
       padding: pem(7px) pem(18px);
@@ -118,6 +125,18 @@ strong {
       background: $secondary-color;
     }
   }
+}
+
+// Hide sub menu by default
+.sub-menu {
+  display: none;
+  float: left;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  width: pem(200px); // Adjust this value as required.
+  z-index: 99999;
 }
 
 // Latest news
