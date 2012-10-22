@@ -1,5 +1,6 @@
 <?php get_header(); ?>
   
+   <section role="main" class="home-content m-all t2 d2-d4">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
     <section role="main">
@@ -12,6 +13,7 @@
   <?php endwhile; else: ?>
     <p>Whatever you were trying, it didn't work...</p>
   <?php endif; ?>
+</section>
 
 <?php get_sidebar(); ?>
 

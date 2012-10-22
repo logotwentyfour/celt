@@ -99,6 +99,25 @@ strong {
   }
 }
 
+//The Nav/Menu bar
+// Hide sub menu by default
+.sub-menu {
+  display: none;
+  float: left;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  width: pem(200px); // Adjust this value as required.
+  z-index: 99999;
+  background-color: $brand-color;
+
+    a{
+      border-right: none !important;
+    }
+}
+
+
 // <ul> The Nav/Menu bar
 .top-nav, .footer-nav {
   background-color: $brand-color;
@@ -111,6 +130,7 @@ strong {
     &:hover {
       .sub-menu {
         display: block;
+        background-color: $brand-color;
       }
     }
     
@@ -127,33 +147,33 @@ strong {
   }
 }
 
-// Hide sub menu by default
-.sub-menu {
-  display: none;
-  float: left;
-  margin: 0;
-  position: absolute;
-  text-align: left;
-  left: 0;
-  width: pem(200px); // Adjust this value as required.
-  z-index: 99999;
-}
+
 
 // Latest news
 .latest-news {
   background-color: #E9FDA7;
-  margin-top: 20px;
+  margin-top: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 1em;
+
+  article{
+    border-bottom: 1px solid black;  //#484A4E
+    margin-bottom: 3%;
+  }
 }
 
 // Home page
 
-.list {
-  list-style-type: disc;
-  
-  li {
-    display: inline-block;
+.home-content {
+
+  ul{
+    list-style: disc;
+    margin-left: 1.5em;
   }
+  
 }
+
 
 // Sidebar
 [role="complementary"] {

@@ -4,9 +4,13 @@ Template Name: Home Page
 */
 get_header(); ?>
 
+<div class="slider">
+      <img src="/wp-content/uploads/2012/10/celt-slider-01@1.jpg"/>
+    </div>
+
 <?php get_sidebar(); ?>
 
-    <section role="main" class="m-all t2 d2-d4">
+    <section role="main" class="home-content m-all t2 d2-d4">
       
       <?php if ( have_posts() ) : ?>
 
@@ -19,6 +23,7 @@ get_header(); ?>
       <?php endif; ?>
       
       <section class="latest-news"> 
+      <h1>LATEST NEWS</h1>
         
       <?php 
       query_posts('posts_per_page=5'); 
