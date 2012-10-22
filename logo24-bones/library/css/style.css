@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* line 17, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +24,77 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+<<<<<<< HEAD
 /* line 22, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 html {
   line-height: 1;
 }
 
+<<<<<<< HEAD
 /* line 24, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 ol, ul {
   list-style: none;
 }
 
+<<<<<<< HEAD
 /* line 26, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+<<<<<<< HEAD
 /* line 28, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 /* line 30, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
 /* line 103, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
+<<<<<<< HEAD
 /* line 32, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 32, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 a img {
   border: none;
 }
 
+<<<<<<< HEAD
 /* line 116, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 116, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> origin/master
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -132,12 +168,20 @@ Examples:
 @include scale(box-shadow, (inset 0 0 0 1 #2a9022) (inset 0 0 3 #459966), 16);
 */
 /* Gridset CSS goes here */
+<<<<<<< HEAD
 /* line 61, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+=======
+/* line 61, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+>>>>>>> origin/master
 * html {
   font-size: 100%;
 }
 
+<<<<<<< HEAD
 /* line 64, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+=======
+/* line 64, ../../../../../../.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+>>>>>>> origin/master
 html {
   font-size: 16px;
   line-height: 1.5em;
@@ -204,6 +248,7 @@ strong {
   .wrapper {
     max-width: 1024px;
   }
+<<<<<<< HEAD
   /* line 69, style.scss */
   .wrapper [role="main"] {
     margin-left: 21em;
@@ -218,10 +263,16 @@ strong {
 }
 
 /* line 85, style.scss */
+=======
+}
+
+/* line 72, style.scss */
+>>>>>>> origin/master
 [role="banner"] {
   overflow: hidden;
   *zoom: 1;
 }
+<<<<<<< HEAD
 /* line 90, style.scss */
 [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
   background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
@@ -237,11 +288,29 @@ strong {
 }
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
   /* line 90, style.scss */
+=======
+/* line 77, style.scss */
+[role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
+  background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
+  height: 2.75em;
+  margin: 0.3125em auto 2.4375em auto;
+  width: 9.5em;
+}
+@media only screen and (min-width: 30em) {
+  /* line 77, style.scss */
+  [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
+    margin-left: 2.9375em;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 77, style.scss */
+>>>>>>> origin/master
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
     background-size: 100%;
   }
 }
+<<<<<<< HEAD
 /* line 110, style.scss */
 [role="banner"] h2 {
   font-size: 1.375em;
@@ -261,6 +330,30 @@ strong {
 }
 /* line 124, style.scss */
 .top-nav li a, .top-nav li a:link, .top-nav li a:visited, .footer-nav li a, .footer-nav li a:link, .footer-nav li a:visited {
+=======
+/* line 97, style.scss */
+[role="banner"] h2 {
+  font-size: 1.375em;
+  line-height: 2.18182em;
+}
+
+/* line 103, style.scss */
+.top-nav, .footer-nav {
+  background-color: #6ba74d;
+}
+/* line 106, style.scss */
+.top-nav li, .footer-nav li {
+  display: inline;
+  position: relative;
+}
+/* line 112, style.scss */
+.top-nav li:hover .sub-menu, .footer-nav li:hover .sub-menu {
+  display: block;
+}
+/* line 117, style.scss */
+.top-nav li a, .top-nav li a:link, .top-nav li a:visited, .footer-nav li a, .footer-nav li a:link, .footer-nav li a:visited {
+  border-right: 1px solid #4c9644;
+>>>>>>> origin/master
   color: #fff;
   display: -moz-inline-stack;
   display: inline-block;
@@ -268,24 +361,47 @@ strong {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+<<<<<<< HEAD
   padding: 0.438em 1.125em;
 }
 /* line 130, style.scss */
+=======
+  padding: 0.4375em 1.125em;
+}
+/* line 124, style.scss */
+>>>>>>> origin/master
 .top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active, .footer-nav li a:hover, .footer-nav li a:focus, .footer-nav li a:active {
   background: #4c9644;
 }
 
+<<<<<<< HEAD
 /* line 137, style.scss */
 .sub-menu {
   display: none;
 }
 
 /* line 142, style.scss */
+=======
+/* line 131, style.scss */
+.sub-menu {
+  display: none;
+  float: left;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  width: 12.5em;
+  z-index: 99999;
+}
+
+/* line 143, style.scss */
+>>>>>>> origin/master
 .latest-news {
   background-color: #E9FDA7;
   margin-top: 20px;
 }
 
+<<<<<<< HEAD
 /* line 149, style.scss */
 .sidebar1 {
   padding-top: 20px;
@@ -297,10 +413,18 @@ strong {
 }
 
 /* line 158, style.scss */
+=======
+/* line 150, style.scss */
+.list {
+  list-style-type: disc;
+}
+/* line 153, style.scss */
+>>>>>>> origin/master
 .list li {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /* line 161, style.scss */
 .home-header {
   margin-top: 1em;
@@ -313,22 +437,41 @@ strong {
   padding: 0.875em 1.125em 1.688em 1.125em;
 }
 /* line 173, style.scss */
+=======
+/* line 160, style.scss */
+[role="complementary"] ul {
+  background: #ffed91;
+  padding: 0.875em 1.125em 1.6875em 1.125em;
+}
+/* line 165, style.scss */
+>>>>>>> origin/master
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
+<<<<<<< HEAD
   padding: 0.625em 0 0.313em 0;
 }
 /* line 180, style.scss */
+=======
+  padding: 0.625em 0 0.3125em 0;
+}
+/* line 172, style.scss */
+>>>>>>> origin/master
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
+<<<<<<< HEAD
 /* line 188, style.scss */
+=======
+/* line 180, style.scss */
+>>>>>>> origin/master
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 192, style.scss */
 .p404 h1 {
   font-size: 8.313em;
@@ -338,24 +481,51 @@ strong {
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.182em;
+=======
+/* line 184, style.scss */
+.p404 h1 {
+  font-size: 8.3125em;
+  line-height: 1.08271em;
+}
+/* line 188, style.scss */
+.p404 h2 {
+  font-size: 1.375em;
+  line-height: 2.18182em;
+>>>>>>> origin/master
   color: #6ba74d;
   line-height: 1em;
   margin-bottom: 1.5em;
 }
+<<<<<<< HEAD
 /* line 203, style.scss */
+=======
+/* line 195, style.scss */
+>>>>>>> origin/master
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
+<<<<<<< HEAD
 /* line 209, style.scss */
+=======
+/* line 201, style.scss */
+>>>>>>> origin/master
 .p404 i {
   display: block;
 }
 
+<<<<<<< HEAD
 /* line 215, style.scss */
 [role='contentinfo'] {
+=======
+/* line 207, style.scss */
+[role='contentinfo'] {
+  clear: left;
+  float: left;
+  width: 100%;
+>>>>>>> origin/master
   margin-top: 1.5em;
 }
 

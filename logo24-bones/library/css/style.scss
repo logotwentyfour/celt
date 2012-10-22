@@ -64,19 +64,6 @@ strong {
   
   @media only screen and (min-width: 768px) {
     max-width: 1024px;
-
-
-    [role="main"] {
-      margin-left: 21em;
-    }
-
-    .sidebar1{
-      width: 17em;
-      position: absolute;
-      display: block;
-      top: 415px;
-    }
-
   }
 }
 
@@ -115,13 +102,20 @@ strong {
 // <ul> The Nav/Menu bar
 .top-nav, .footer-nav {
   background-color: $brand-color;
-  @include clearfix;
   
   li {
-    border-right: 1px solid $secondary-color;
-    float: left;
+    display: inline;
+    position: relative;
+    
+    // open the sub menu
+    &:hover {
+      .sub-menu {
+        display: block;
+      }
+    }
     
     a, a:link, a:visited {
+      border-right: 1px solid $secondary-color;
       color: #fff;
       @include inline-block;
       padding: pem(7px) pem(18px);
@@ -133,34 +127,32 @@ strong {
   }
 }
 
-// Temporarily hide the sub menu.
+// Hide sub menu by default
 .sub-menu {
   display: none;
+  float: left;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  width: pem(200px); // Adjust this value as required.
+  z-index: 99999;
 }
 
 // Latest news
-.latest-news{
+.latest-news {
   background-color: #E9FDA7;
   margin-top: 20px;
 }
 
-// sidebar
-
-.sidebar1{
-  padding-top: 20px;
-}
-
 // Home page
 
-.list{
-  list-style-type:disc;
-}
-.list li{
-  display: inline-block;
-}
-.home-header{
-  margin-top: 1em;
-  margin-bottom: 1em;
+.list {
+  list-style-type: disc;
+  
+  li {
+    display: inline-block;
+  }
 }
 
 // Sidebar
@@ -213,6 +205,7 @@ strong {
 
 //<footer>
 [role='contentinfo'] {
+  @include gridset-all;
   margin-top: 1.5em;
 }
 
