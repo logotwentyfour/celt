@@ -1,78 +1,452 @@
-/*
-Syntax error: Invalid CSS after "...t-align : left;": expected "}", was "`"
-        on line 10 of C:/Users/Shane/Documents/Logo24/CELT/Git/logo24-bones/library/css/_helpers.scss
-        from line 12 of C:/Users/Shane/Documents/Logo24/CELT/Git/logo24-bones/library/css/style.scss
+/* line 17, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-C:/Users/Shane/Documents/Logo24/CELT/Git/logo24-bones/library/css/_helpers.scss:10
-C:/Users/Shane/Documents/Logo24/CELT/Git/logo24-bones/library/css/style.scss:12
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:1010:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:956:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:951:in `tok!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:463:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:456:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:480:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:473:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:58:in `stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/scss/parser.rb:27:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:327:in `_to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:259:in `to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:300:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:247:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-C:/Ruby193/bin/compass:23:in `load'
-C:/Ruby193/bin/compass:23:in `<main>'
+/* line 22, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, _helpers.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 2, _helpers.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 3, _helpers.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* Image Replacement */
+/* line 6, _helpers.scss */
+.ir, [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
+  display: block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  text-indent: -999em;
+  direction: ltr;
+  width: 0;
+}
+
+/* Hide Visually */
+/* line 18, _helpers.scss */
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* line 29, _helpers.scss */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static;
+  margin: 0;
+  height: auto;
+  width: auto;
+  overflow: visible;
+  clip: auto;
+}
+
+/* See http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin/ */
+/* Convert PX units to EMs.
+Ex: margin-right: pem(16);
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...t-align : left;\": expected \"}\", was \"`\"\A         on line 10 of C:/Users/Shane/Documents/Logo24/CELT/Git/logo24-bones/library/css/_helpers.scss\A         from line 12 of C:/Users/Shane/Documents/Logo24/CELT/Git/logo24-bones/library/css/style.scss"; }
+/* Used to convert PX to EMs for multiple properties or values or both.
+$base is an optional measurement that allows making measurements relative to the parent font size rather than the current. Also accepts a list of lists (instead a list of values) for properties that accept multiple lists of values. Only numbers of converted; everything else is passed through.
+
+Examples:
+
+@include scale(line-height, 30)
+@include scale(line-height, 30, 16)
+@include scale(width height, 125);
+@include scale(padding, 0 25, 16);
+@include scale(text-shadow, (#0d6e28 1 1) (#777 0 0 2), 16);
+@include scale(box-shadow, (inset 0 0 0 1 #2a9022) (inset 0 0 3 #459966), 16);
+*/
+/* Gridset CSS goes here */
+/* line 61, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 23, style.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 2em;
+  background-color: #fff;
+}
+
+/* line 29, style.scss */
+p, ul li {
+  color: #333333;
+}
+
+/* line 33, style.scss */
+a, a:link, a:visited {
+  color: #555555;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 38, style.scss */
+a:hover, a:active, a:focus, a:link:hover, a:link:active, a:link:focus, a:visited:hover, a:visited:active, a:visited:focus {
+  color: #6ba74d;
+}
+
+/* line 43, style.scss */
+h1 {
+  font-size: 1.5em;
+  line-height: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 49, style.scss */
+i {
+  font-style: normal;
+}
+
+/* line 53, style.scss */
+strong {
+  font-weight: normal;
+}
+
+/* line 57, style.scss */
+.wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  /* line 57, style.scss */
+  .wrapper {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 57, style.scss */
+  .wrapper {
+    max-width: 1024px;
+  }
+  /* line 69, style.scss */
+  .wrapper [role="main"] {
+    margin-left: 21em;
+  }
+  /* line 73, style.scss */
+  .wrapper .sidebar1 {
+    width: 17em;
+    position: absolute;
+    display: block;
+    top: 415px;
+  }
+}
+
+/* line 85, style.scss */
+[role="banner"] {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 90, style.scss */
+[role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
+  background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
+  height: 2.75em;
+  margin: 0.313em auto 2.438em auto;
+  width: 9.5em;
+}
+@media only screen and (min-width: 30em) {
+  /* line 90, style.scss */
+  [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
+    margin-left: 2.938em;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+  /* line 90, style.scss */
+  [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
+    background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
+    background-size: 100%;
+  }
+}
+/* line 110, style.scss */
+[role="banner"] h2 {
+  font-size: 1.375em;
+  line-height: 2.182em;
+}
+
+/* line 116, style.scss */
+.top-nav, .footer-nav {
+  background-color: #6ba74d;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 120, style.scss */
+.top-nav li, .footer-nav li {
+  border-right: 1px solid #4c9644;
+  float: left;
+}
+/* line 124, style.scss */
+.top-nav li a, .top-nav li a:link, .top-nav li a:visited, .footer-nav li a, .footer-nav li a:link, .footer-nav li a:visited {
+  color: #fff;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding: 0.438em 1.125em;
+}
+/* line 130, style.scss */
+.top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active, .footer-nav li a:hover, .footer-nav li a:focus, .footer-nav li a:active {
+  background: #4c9644;
+}
+
+/* line 137, style.scss */
+.sub-menu {
+  display: none;
+}
+
+/* line 142, style.scss */
+.latest-news {
+  background-color: #E9FDA7;
+  margin-top: 20px;
+}
+
+/* line 149, style.scss */
+.sidebar1 {
+  padding-top: 20px;
+}
+
+/* line 155, style.scss */
+.list {
+  list-style-type: disc;
+}
+
+/* line 158, style.scss */
+.list li {
+  display: inline-block;
+}
+
+/* line 161, style.scss */
+.home-header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 168, style.scss */
+[role="complementary"] ul {
+  background: #ffed91;
+  padding: 0.875em 1.125em 1.688em 1.125em;
+}
+/* line 173, style.scss */
+[role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
+  border-bottom: 1px solid #cb8836;
+  color: #a46e2a;
+  display: block;
+  padding: 0.625em 0 0.313em 0;
+}
+/* line 180, style.scss */
+[role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
+  background: #ffe978;
+}
+
+/* line 188, style.scss */
+.p404 {
+  padding-top: 5em;
+  text-align: center;
+}
+/* line 192, style.scss */
+.p404 h1 {
+  font-size: 8.313em;
+  line-height: 1.083em;
+}
+/* line 196, style.scss */
+.p404 h2 {
+  font-size: 1.375em;
+  line-height: 2.182em;
+  color: #6ba74d;
+  line-height: 1em;
+  margin-bottom: 1.5em;
+}
+/* line 203, style.scss */
+.p404 p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #6ba74d;
+  line-height: 1.25em;
+}
+/* line 209, style.scss */
+.p404 i {
+  display: block;
+}
+
+/* line 215, style.scss */
+[role='contentinfo'] {
+  margin-top: 1.5em;
+}
+
+/*.lt-ie9 {
+
+}*/
+@media print {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Print Stylesheet
+  
+  This is the print stylesheet. There's probably not a lot
+  of reasons to edit this stylesheet. If you want to
+  though, go for it.
+  
+  ******************************************************************/
+  /* line 15, _print.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 23, _print.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  /* line 28, _print.scss */
+  a:after, a:visited:after {
+    content: " (" attr(href) ")";
+  }
+  /* line 33, _print.scss */
+  a abbr[title]:after, a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 40, _print.scss */
+  .ir a:after, [role="banner"] h1 a a:after, [role="banner"] h1 a:link a:after, [role="banner"] h1 a:visited a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 44, _print.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 49, _print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 53, _print.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 57, _print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 65, _print.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 71, _print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 80, _print.scss */
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  nav {
+    display: none;
+  }
+}
