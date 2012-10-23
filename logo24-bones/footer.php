@@ -3,6 +3,11 @@
       <nav>
         <?php bones_footer_links(); ?>
       </nav>
+      <div class="copyright"><p>&copy;CELT 2012. Registered Charity CHY 14519</p>
+        <p>To sponsor projects, programmes and events <a href="/contact-us/">Contact Us.</a></p>
+        <p>Sponsors benefit from media coverage and advertising in our marketing material.</p>
+
+      </div>
     </footer>
   
   </div> <!-- .wrapper -->

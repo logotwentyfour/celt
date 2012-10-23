@@ -206,12 +206,28 @@ strong {
   }
 }
 
-/* line 72, style.scss */
+/* line 70, style.scss */
+.page {
+  margin-top: 1.5em;
+}
+
+/* line 74, style.scss */
+.copyright {
+  margin-top: 2em;
+}
+/* line 76, style.scss */
+.copyright p {
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+/* line 84, style.scss */
 [role="banner"] {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 77, style.scss */
+/* line 89, style.scss */
 [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
   background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
   height: 2.75em;
@@ -219,25 +235,25 @@ strong {
   width: 9.5em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 77, style.scss */
+  /* line 89, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     margin-left: 2.938em;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-  /* line 77, style.scss */
+  /* line 89, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
     background-size: 100%;
   }
 }
-/* line 97, style.scss */
+/* line 109, style.scss */
 [role="banner"] h2 {
   font-size: 1.375em;
   line-height: 2.182em;
 }
 
-/* line 104, style.scss */
+/* line 116, style.scss */
 .sub-menu {
   display: none;
   float: left;
@@ -249,26 +265,26 @@ strong {
   z-index: 99999;
   background-color: #6ba74d;
 }
-/* line 115, style.scss */
+/* line 127, style.scss */
 .sub-menu a {
   border-right: none !important;
 }
 
-/* line 122, style.scss */
+/* line 134, style.scss */
 .top-nav, .footer-nav {
   background-color: #6ba74d;
 }
-/* line 125, style.scss */
+/* line 137, style.scss */
 .top-nav li, .footer-nav li {
   display: inline;
   position: relative;
 }
-/* line 131, style.scss */
+/* line 143, style.scss */
 .top-nav li:hover .sub-menu, .footer-nav li:hover .sub-menu {
   display: block;
   background-color: #6ba74d;
 }
-/* line 137, style.scss */
+/* line 149, style.scss */
 .top-nav li a, .top-nav li a:link, .top-nav li a:visited, .footer-nav li a, .footer-nav li a:link, .footer-nav li a:visited {
   border-right: 1px solid #4c9644;
   color: #fff;
@@ -280,12 +296,12 @@ strong {
   *display: inline;
   padding: 0.438em 1.125em;
 }
-/* line 144, style.scss */
+/* line 156, style.scss */
 .top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active, .footer-nav li a:hover, .footer-nav li a:focus, .footer-nav li a:active {
   background: #4c9644;
 }
 
-/* line 153, style.scss */
+/* line 165, style.scss */
 .latest-news {
   background-color: #E9FDA7;
   margin-top: 1.5em;
@@ -293,46 +309,46 @@ strong {
   padding-right: 1.5em;
   padding-bottom: 1em;
 }
-/* line 160, style.scss */
+/* line 172, style.scss */
 .latest-news article {
   border-bottom: 1px solid black;
   margin-bottom: 3%;
 }
 
-/* line 170, style.scss */
+/* line 182, style.scss */
 .home-content ul {
   list-style: disc;
   margin-left: 1.5em;
 }
 
-/* line 180, style.scss */
+/* line 192, style.scss */
 [role="complementary"] ul {
   background: #ffed91;
   padding: 0.875em 1.125em 1.688em 1.125em;
 }
-/* line 185, style.scss */
+/* line 197, style.scss */
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
   padding: 0.625em 0 0.313em 0;
 }
-/* line 192, style.scss */
+/* line 204, style.scss */
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
-/* line 200, style.scss */
+/* line 212, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 204, style.scss */
+/* line 216, style.scss */
 .p404 h1 {
   font-size: 8.313em;
   line-height: 1.083em;
 }
-/* line 208, style.scss */
+/* line 220, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.182em;
@@ -340,19 +356,19 @@ strong {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 215, style.scss */
+/* line 227, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-/* line 221, style.scss */
+/* line 233, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 227, style.scss */
+/* line 239, style.scss */
 [role='contentinfo'] {
   clear: left;
   float: left;
