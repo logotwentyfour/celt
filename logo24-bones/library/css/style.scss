@@ -27,6 +27,16 @@ body {
   @include primary-typeface;
 }
 
+p, ul, ol {
+  margin-bottom: 1em;
+}
+
+[role="main"] {
+  ul {
+    list-style: disc;
+  }
+}
+
 p, ul li {
   color: $primary-text-color;
 }
@@ -50,6 +60,11 @@ h1 {
 h2 {
   font-style: italic;
   font-weight: bold;
+}
+
+h3 {
+  color: $brand-color;
+  text-transform: uppercase;
 }
 
 i {
@@ -77,12 +92,13 @@ strong {
   margin-top: 1.5em;
 }
 
-.copyright{
-     margin-top: 2em;
-  p{
-     text-align: center;
-     font-size: 0.8em;
-     line-height: 1.4em;
+.copyright {
+  margin-top: 2em;
+  p {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    margin-bottom: 0;
   }
 }
 
@@ -266,17 +282,38 @@ strong {
   }
   
   // Book Now link
+  p {
+    position: absolute;
+    right: 0;
+    top: pem(13px);
+  }
   a, a:link, a:visited {
     background: #bce582;
     color: #374b1d;
     display: block;
-    position: absolute;
-    right: 0;
-    top: pem(13px);
     padding: pem(3px) pem(16px);
   }
   a:hover, a:focus, a:active {
     background: darken(#bce582,8%);
+  }
+}
+
+.course-show-list {
+  padding-bottom: 2em;
+  
+  li {
+    border-bottom: 1px dashed $primary-text-color;
+    @include clearfix;
+    padding: 1em 0;
+    position: relative;
+  }
+  
+  .date {
+    @include adjust-font-size-to(14px);
+  }
+  
+  .info {
+    margin-bottom: 0;
   }
 }
 
