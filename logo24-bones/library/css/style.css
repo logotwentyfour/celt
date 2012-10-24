@@ -321,34 +321,51 @@ strong {
   margin-left: 1.5em;
 }
 
-/* line 192, style.scss */
+/* line 191, style.scss */
+.gallery-wrap {
+  background-color: #DCF1FF;
+  padding-top: 1.25em;
+}
+/* line 194, style.scss */
+.gallery-wrap img {
+  width: 14em;
+  height: 7.5em;
+}
+/* line 198, style.scss */
+.gallery-wrap figure {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  width: 15.25em;
+}
+
+/* line 208, style.scss */
 [role="complementary"] ul {
   background: #ffed91;
   padding: 0.875em 1.125em 1.688em 1.125em;
 }
-/* line 197, style.scss */
+/* line 213, style.scss */
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
   padding: 0.625em 0 0.313em 0;
 }
-/* line 204, style.scss */
+/* line 220, style.scss */
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
-/* line 212, style.scss */
+/* line 228, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 216, style.scss */
+/* line 232, style.scss */
 .p404 h1 {
   font-size: 8.313em;
   line-height: 1.083em;
 }
-/* line 220, style.scss */
+/* line 236, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.182em;
@@ -356,19 +373,19 @@ strong {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 227, style.scss */
+/* line 243, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-/* line 233, style.scss */
+/* line 249, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 239, style.scss */
+/* line 255, style.scss */
 [role='contentinfo'] {
   clear: left;
   float: left;
