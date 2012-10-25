@@ -9,7 +9,7 @@ get_header(); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
       <section class="m-all t1 d1" role="complementary">
-        <?php wp_nav_menu(array('menu'=>'Courses')); ?>
+        <?php wp_nav_menu(array('menu'=>'courses')); ?>
       </section>
 
       <section role="main" class="m-all t2 d2-d4">
