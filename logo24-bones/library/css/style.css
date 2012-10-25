@@ -1862,60 +1862,55 @@ strong {
   padding-right: 1em;
 }
 /* line 216, style.scss */
-.gallery-wrap img {
-  width: 14em;
-  height: 7.5em;
-}
-/* line 220, style.scss */
 .gallery-wrap figure {
   padding-left: 1.25em;
   padding-right: 1.25em;
   width: 15.25em;
 }
 
-/* line 227, style.scss */
+/* line 223, style.scss */
 .gallery-heading {
   font-weight: bold;
   padding-left: 1em;
 }
 
-/* line 233, style.scss */
+/* line 229, style.scss */
 .gallery-sub-pictures-container figure {
   padding-left: 0em;
 }
-/* line 236, style.scss */
+/* line 232, style.scss */
 .gallery-sub-pictures-container .gallery-heading {
   display: none;
 }
 
-/* line 244, style.scss */
+/* line 240, style.scss */
 [role="complementary"] ul {
   background: #ffed91;
   padding: 0.875em 1.125em 1.688em 1.125em;
 }
-/* line 249, style.scss */
+/* line 245, style.scss */
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
   padding: 0.625em 0 0.313em 0;
 }
-/* line 256, style.scss */
+/* line 252, style.scss */
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
-/* line 264, style.scss */
+/* line 260, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 268, style.scss */
+/* line 264, style.scss */
 .p404 h1 {
   font-size: 8.313em;
   line-height: 1.083em;
 }
-/* line 272, style.scss */
+/* line 268, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.182em;
@@ -1923,23 +1918,23 @@ strong {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 279, style.scss */
+/* line 275, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-/* line 285, style.scss */
+/* line 281, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 290, style.scss */
+/* line 286, style.scss */
 .course-index-list {
   padding-bottom: 2em;
 }
-/* line 293, style.scss */
+/* line 289, style.scss */
 .course-index-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -1947,14 +1942,14 @@ strong {
   padding: 1em 0;
   position: relative;
 }
-/* line 300, style.scss */
+/* line 296, style.scss */
 .course-index-list .date {
   position: absolute;
   left: 0;
   top: 1em;
   width: 14em;
 }
-/* line 306, style.scss */
+/* line 302, style.scss */
 .course-index-list .title {
   float: left;
   margin-left: 16.563em;
@@ -1962,29 +1957,29 @@ strong {
   padding-right: 2.5em;
   text-transform: uppercase;
 }
-/* line 315, style.scss */
+/* line 311, style.scss */
 .course-index-list p {
   position: absolute;
   right: 0;
   top: 0.813em;
 }
-/* line 320, style.scss */
+/* line 316, style.scss */
 .course-index-list a, .course-index-list a:link, .course-index-list a:visited {
   background: #bce582;
   color: #374b1d;
   display: block;
   padding: 0.188em 1em;
 }
-/* line 326, style.scss */
+/* line 322, style.scss */
 .course-index-list a:hover, .course-index-list a:focus, .course-index-list a:active {
   background: #aade60;
 }
 
-/* line 331, style.scss */
+/* line 327, style.scss */
 .course-show-list {
   padding-bottom: 2em;
 }
-/* line 334, style.scss */
+/* line 330, style.scss */
 .course-show-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -1992,17 +1987,17 @@ strong {
   padding: 1em 0;
   position: relative;
 }
-/* line 341, style.scss */
+/* line 337, style.scss */
 .course-show-list .date {
   font-size: 0.875em;
   line-height: 1.714em;
 }
-/* line 345, style.scss */
+/* line 341, style.scss */
 .course-show-list .info {
   margin-bottom: 0;
 }
 
-/* line 351, style.scss */
+/* line 347, style.scss */
 [role='contentinfo'] {
   clear: left;
   float: left;
