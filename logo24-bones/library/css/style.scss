@@ -191,6 +191,7 @@ strong {
 .gallery-wrap{
   background-color: #DCF1FF;
   padding-top: pem(20px);
+  padding-right: 1em;
   img{
     width: pem(224px);
     height: pem(120px);
@@ -201,6 +202,21 @@ strong {
     width: pem(244px);
   }
 }
+
+.gallery-heading{
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+.gallery-sub-pictures-container{
+  figure{
+    padding-left: 0em;
+  }
+  .gallery-heading{
+    display: none;
+  }
+}
+
 
 
 // Sidebar
