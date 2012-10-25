@@ -3,7 +3,12 @@
 			<div id="content">
 			
 				<div id="inner-content" class="wrap clearfix">
-	
+					<section class="m-all t1 d1" role="complementary">
+					     <ul>
+					<?php wp_get_archives('type=monthly'); ?>
+					     </ul>
+					     </section>
+
 				    <div id="main" class="eightcol first clearfix m-all t2 d2-d4" role="main">
 				    	<h1>BLOG</h1>
 				    	<div class="blog-wrap">
@@ -68,7 +73,7 @@
 				</div> <!-- end .blog-wrap -->
 				    </div> <!-- end #main -->
     
-				    <?php get_sidebar(); ?>
+				    
 				    
 				</div> <!-- end #inner-content -->
     
