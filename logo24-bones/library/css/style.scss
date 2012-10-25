@@ -208,7 +208,6 @@ strong {
   
 }
 
-
 // Gallery Page
 .gallery-wrap{
   background-color: #DCF1FF;
@@ -238,7 +237,6 @@ strong {
     display: none;
   }
 }
-
 
 
 // Sidebar
@@ -366,5 +364,5 @@ strong {
 //PRINT STYLESHEET
 
 @media print {
-	@import "print";
+  @import "print";
 }

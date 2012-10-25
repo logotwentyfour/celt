@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -1642,12 +1642,12 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* Gridset CSS goes here */
-/* line 61, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
 }
 
-/* line 64, ../../../../../../../../Users/paddy/.rvm/gems/ruby-1.9.3-p194-falcon/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 16px;
   line-height: 1.5em;
@@ -1765,16 +1765,16 @@ strong {
 [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
   background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
   height: 2.75em;
-  margin: 0.3125em auto 2.4375em auto;
+  margin: 0.313em auto 2.438em auto;
   width: 9.5em;
 }
 @media only screen and (min-width: 30em) {
   /* line 111, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
-    margin-left: 2.9375em;
+    margin-left: 2.938em;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
   /* line 111, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
@@ -1784,7 +1784,7 @@ strong {
 /* line 131, style.scss */
 [role="banner"] h2 {
   font-size: 1.375em;
-  line-height: 2.18182em;
+  line-height: 2.182em;
 }
 
 /* line 138, style.scss */
@@ -1828,7 +1828,7 @@ strong {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  padding: 0.4375em 1.125em;
+  padding: 0.438em 1.125em;
 }
 /* line 178, style.scss */
 .top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active, .footer-nav li a:hover, .footer-nav li a:focus, .footer-nav li a:active {
@@ -1855,126 +1855,91 @@ strong {
   margin-left: 1.5em;
 }
 
-<<<<<<< HEAD
-/* line 191, style.scss */
+/* line 212, style.scss */
 .gallery-wrap {
   background-color: #DCF1FF;
   padding-top: 1.25em;
   padding-right: 1em;
 }
-/* line 195, style.scss */
+/* line 216, style.scss */
 .gallery-wrap img {
   width: 14em;
   height: 7.5em;
 }
-/* line 199, style.scss */
+/* line 220, style.scss */
 .gallery-wrap figure {
   padding-left: 1.25em;
   padding-right: 1.25em;
   width: 15.25em;
 }
 
-/* line 206, style.scss */
+/* line 227, style.scss */
 .gallery-heading {
   font-weight: bold;
   padding-left: 1em;
 }
 
-/* line 212, style.scss */
+/* line 233, style.scss */
 .gallery-sub-pictures-container figure {
   padding-left: 0em;
 }
-/* line 215, style.scss */
+/* line 236, style.scss */
 .gallery-sub-pictures-container .gallery-heading {
   display: none;
 }
 
-/* line 224, style.scss */
-=======
-/* line 214, style.scss */
->>>>>>> origin/master
+/* line 244, style.scss */
 [role="complementary"] ul {
   background: #ffed91;
-  padding: 0.875em 1.125em 1.6875em 1.125em;
+  padding: 0.875em 1.125em 1.688em 1.125em;
 }
-<<<<<<< HEAD
-/* line 229, style.scss */
-=======
-/* line 219, style.scss */
->>>>>>> origin/master
+/* line 249, style.scss */
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
-  padding: 0.625em 0 0.3125em 0;
+  padding: 0.625em 0 0.313em 0;
 }
-<<<<<<< HEAD
-/* line 236, style.scss */
-=======
-/* line 226, style.scss */
->>>>>>> origin/master
+/* line 256, style.scss */
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
-<<<<<<< HEAD
-/* line 244, style.scss */
-=======
-/* line 234, style.scss */
->>>>>>> origin/master
+/* line 264, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-<<<<<<< HEAD
-/* line 248, style.scss */
-=======
-/* line 238, style.scss */
->>>>>>> origin/master
+/* line 268, style.scss */
 .p404 h1 {
-  font-size: 8.3125em;
-  line-height: 1.08271em;
+  font-size: 8.313em;
+  line-height: 1.083em;
 }
-<<<<<<< HEAD
-/* line 252, style.scss */
-=======
-/* line 242, style.scss */
->>>>>>> origin/master
+/* line 272, style.scss */
 .p404 h2 {
   font-size: 1.375em;
-  line-height: 2.18182em;
+  line-height: 2.182em;
   color: #6ba74d;
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-<<<<<<< HEAD
-/* line 259, style.scss */
-=======
-/* line 249, style.scss */
->>>>>>> origin/master
+/* line 279, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-<<<<<<< HEAD
-/* line 265, style.scss */
-=======
-/* line 255, style.scss */
->>>>>>> origin/master
+/* line 285, style.scss */
 .p404 i {
   display: block;
 }
 
-<<<<<<< HEAD
-/* line 271, style.scss */
-=======
-/* line 260, style.scss */
+/* line 290, style.scss */
 .course-index-list {
   padding-bottom: 2em;
 }
-/* line 263, style.scss */
+/* line 293, style.scss */
 .course-index-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -1982,44 +1947,44 @@ strong {
   padding: 1em 0;
   position: relative;
 }
-/* line 270, style.scss */
+/* line 300, style.scss */
 .course-index-list .date {
   position: absolute;
   left: 0;
   top: 1em;
   width: 14em;
 }
-/* line 276, style.scss */
+/* line 306, style.scss */
 .course-index-list .title {
   float: left;
-  margin-left: 16.5625em;
+  margin-left: 16.563em;
   margin-right: 9.125em;
   padding-right: 2.5em;
   text-transform: uppercase;
 }
-/* line 285, style.scss */
+/* line 315, style.scss */
 .course-index-list p {
   position: absolute;
   right: 0;
-  top: 0.8125em;
+  top: 0.813em;
 }
-/* line 290, style.scss */
+/* line 320, style.scss */
 .course-index-list a, .course-index-list a:link, .course-index-list a:visited {
   background: #bce582;
   color: #374b1d;
   display: block;
-  padding: 0.1875em 1em;
+  padding: 0.188em 1em;
 }
-/* line 296, style.scss */
+/* line 326, style.scss */
 .course-index-list a:hover, .course-index-list a:focus, .course-index-list a:active {
   background: #aade60;
 }
 
-/* line 301, style.scss */
+/* line 331, style.scss */
 .course-show-list {
   padding-bottom: 2em;
 }
-/* line 304, style.scss */
+/* line 334, style.scss */
 .course-show-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -2027,18 +1992,17 @@ strong {
   padding: 1em 0;
   position: relative;
 }
-/* line 311, style.scss */
+/* line 341, style.scss */
 .course-show-list .date {
   font-size: 0.875em;
-  line-height: 1.71429em;
+  line-height: 1.714em;
 }
-/* line 315, style.scss */
+/* line 345, style.scss */
 .course-show-list .info {
   margin-bottom: 0;
 }
 
-/* line 321, style.scss */
->>>>>>> origin/master
+/* line 351, style.scss */
 [role='contentinfo'] {
   clear: left;
   float: left;
