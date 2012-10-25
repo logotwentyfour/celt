@@ -7,8 +7,7 @@
 					     <ul>
 					<?php wp_get_archives('type=monthly'); ?>
 					     </ul>
-					     </section>
-					     <section class="m-all t1 d1" role="complementary">
+					    
 					     <ul>
 					<?php wp_list_categories( $args ); ?> 
 					     </ul>

@@ -7,6 +7,10 @@
 					     <ul>
 					<?php wp_get_archives('type=monthly'); ?>
 					     </ul>
+
+					         <ul>
+					<?php wp_list_categories( $args ); ?> 
+					     </ul>
 					     </section>
 				
 				    <div id="main" class="eightcol first clearfix m-all t2 d2-d4" role="main">
