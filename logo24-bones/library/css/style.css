@@ -1761,33 +1761,37 @@ strong {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 111, style.scss */
+/* line 110, style.scss */
+[role="banner"] h1 {
+  font-size: 1em;
+}
+/* line 112, style.scss */
 [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
   background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
   height: 2.75em;
-  margin: 0.313em auto 2.438em auto;
+  margin: 0 auto 2.438em auto;
   width: 9.5em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 111, style.scss */
+  /* line 112, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     margin-left: 2.938em;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-  /* line 111, style.scss */
+  /* line 112, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
     background-size: 100%;
   }
 }
-/* line 131, style.scss */
+/* line 132, style.scss */
 [role="banner"] h2 {
   font-size: 1.375em;
   line-height: 2.182em;
 }
 
-/* line 138, style.scss */
+/* line 139, style.scss */
 .sub-menu {
   display: none;
   float: left;
@@ -1799,26 +1803,36 @@ strong {
   z-index: 99999;
   background-color: #6ba74d;
 }
-/* line 149, style.scss */
+/* line 150, style.scss */
 .sub-menu a {
   border-right: none !important;
 }
 
+/* line 155, style.scss */
+.nav li {
+  margin-left: -0.25em;
+}
+
 /* line 156, style.scss */
+.nav li:first-child {
+  margin-left: 0;
+}
+
+/* line 160, style.scss */
 .top-nav, .footer-nav {
   background-color: #6ba74d;
 }
-/* line 159, style.scss */
+/* line 163, style.scss */
 .top-nav li, .footer-nav li {
   display: inline;
   position: relative;
 }
-/* line 165, style.scss */
+/* line 169, style.scss */
 .top-nav li:hover .sub-menu, .footer-nav li:hover .sub-menu {
   display: block;
   background-color: #6ba74d;
 }
-/* line 171, style.scss */
+/* line 175, style.scss */
 .top-nav li a, .top-nav li a:link, .top-nav li a:visited, .footer-nav li a, .footer-nav li a:link, .footer-nav li a:visited {
   border-right: 1px solid #4c9644;
   color: #fff;
@@ -1830,12 +1844,29 @@ strong {
   *display: inline;
   padding: 0.438em 1.125em;
 }
-/* line 178, style.scss */
+/* line 182, style.scss */
 .top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active, .footer-nav li a:hover, .footer-nav li a:focus, .footer-nav li a:active {
   background: #4c9644;
 }
 
-/* line 187, style.scss */
+/* line 190, style.scss */
+.blog-wrap {
+  background-color: #EAECE7;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/* line 194, style.scss */
+.blog-wrap article {
+  border-bottom: 1px solid;
+  background-color: #EAECE7;
+  padding-top: 1em;
+}
+/* line 198, style.scss */
+.blog-wrap article img {
+  width: 95%;
+}
+
+/* line 208, style.scss */
 .latest-news {
   background-color: #E9FDA7;
   margin-top: 1.5em;
@@ -1843,85 +1874,85 @@ strong {
   padding-right: 1.5em;
   padding-bottom: 1em;
 }
-/* line 194, style.scss */
+/* line 215, style.scss */
 .latest-news article {
   border-bottom: 1px solid black;
   margin-bottom: 3%;
 }
 
-/* line 204, style.scss */
+/* line 225, style.scss */
 .home-content ul {
   list-style: disc;
   margin-left: 1.5em;
 }
 
-/* line 212, style.scss */
+/* line 233, style.scss */
 .gallery-wrap {
   background-color: #DCF1FF;
   padding-top: 1.25em;
   padding-right: 1em;
   padding-left: 1em;
 }
-/* line 217, style.scss */
+/* line 238, style.scss */
 .gallery-wrap img {
   height: auto;
 }
 @media only screen and (min-width: 30em) {
-  /* line 218, style.scss */
+  /* line 239, style.scss */
   .gallery-wrap figure {
     width: 50%;
   }
 }
 @media only screen and (min-width: 62.5em) {
-  /* line 218, style.scss */
+  /* line 239, style.scss */
   .gallery-wrap figure {
     width: 33.3%;
   }
 }
 
-/* line 228, style.scss */
+/* line 249, style.scss */
 .gallery-heading {
   font-weight: bold;
   padding-left: 1em;
 }
 
-/* line 234, style.scss */
+/* line 255, style.scss */
 .gallery-sub-pictures-container figure {
   padding-left: 0em;
 }
-/* line 237, style.scss */
+/* line 258, style.scss */
 .gallery-sub-pictures-container .gallery-heading {
   display: none;
 }
 
-/* line 245, style.scss */
+/* line 266, style.scss */
 [role="complementary"] ul {
   background: #ffed91;
   padding: 0.875em 1.125em 1.688em 1.125em;
 }
-/* line 250, style.scss */
+/* line 271, style.scss */
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
   padding: 0.625em 0 0.313em 0;
 }
-/* line 257, style.scss */
+/* line 278, style.scss */
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
-/* line 265, style.scss */
+/* line 286, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 269, style.scss */
+/* line 290, style.scss */
 .p404 h1 {
   font-size: 8.313em;
   line-height: 1.083em;
 }
-/* line 273, style.scss */
+/* line 294, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.182em;
@@ -1929,23 +1960,23 @@ strong {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 280, style.scss */
+/* line 301, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-/* line 286, style.scss */
+/* line 307, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 291, style.scss */
+/* line 312, style.scss */
 .course-index-list {
   padding-bottom: 2em;
 }
-/* line 294, style.scss */
+/* line 315, style.scss */
 .course-index-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -1953,14 +1984,14 @@ strong {
   padding: 1em 0;
   position: relative;
 }
-/* line 301, style.scss */
+/* line 322, style.scss */
 .course-index-list .date {
   position: absolute;
   left: 0;
   top: 1em;
   width: 14em;
 }
-/* line 307, style.scss */
+/* line 328, style.scss */
 .course-index-list .title {
   float: left;
   margin-left: 16.563em;
@@ -1968,29 +1999,29 @@ strong {
   padding-right: 2.5em;
   text-transform: uppercase;
 }
-/* line 316, style.scss */
+/* line 337, style.scss */
 .course-index-list p {
   position: absolute;
   right: 0;
   top: 0.813em;
 }
-/* line 321, style.scss */
+/* line 342, style.scss */
 .course-index-list a, .course-index-list a:link, .course-index-list a:visited {
   background: #bce582;
   color: #374b1d;
   display: block;
   padding: 0.188em 1em;
 }
-/* line 327, style.scss */
+/* line 348, style.scss */
 .course-index-list a:hover, .course-index-list a:focus, .course-index-list a:active {
   background: #aade60;
 }
 
-/* line 332, style.scss */
+/* line 353, style.scss */
 .course-show-list {
   padding-bottom: 2em;
 }
-/* line 335, style.scss */
+/* line 356, style.scss */
 .course-show-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -1998,17 +2029,17 @@ strong {
   padding: 1em 0;
   position: relative;
 }
-/* line 342, style.scss */
+/* line 363, style.scss */
 .course-show-list .date {
   font-size: 0.875em;
   line-height: 1.714em;
 }
-/* line 346, style.scss */
+/* line 367, style.scss */
 .course-show-list .info {
   margin-bottom: 0;
 }
 
-/* line 352, style.scss */
+/* line 373, style.scss */
 [role='contentinfo'] {
   clear: left;
   float: left;

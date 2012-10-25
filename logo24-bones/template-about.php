@@ -1,12 +1,15 @@
 <?php
 /*
-Template Name: Blog 
+Template Name: About
 */
 get_header(); ?>
 
   <?php 
     # Add template specific sidebars and menus
     # instead of including the sidebar ?>
+    <section class="m-all t1 d1" role="complementary">
+      <?php wp_nav_menu(array('menu'=>'about')); ?>
+    </section>
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

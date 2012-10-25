@@ -5,13 +5,13 @@
 				<div id="inner-content" class="wrap clearfix">
 				
 				
-					<div id="main" class="eightcol first clearfix" role="main">
+					<div id="main" class="eightcol first clearfix m-all t2 d2-d4" role="main">
 
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						
+								<div class="blog-wrap">
 								<header class="article-header">
 							
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
@@ -30,7 +30,7 @@
 							
 								</footer> <!-- end article footer -->
 					
-								<?php comments_template(); ?>
+								
 					
 							</article> <!-- end article -->
 					
@@ -51,7 +51,7 @@
 							</article>
 					
 						<?php endif; ?>
-			
+					</div> <!-- end of .blog -->
 					</div> <!-- end #main -->
     
 					<?php get_sidebar(); ?>

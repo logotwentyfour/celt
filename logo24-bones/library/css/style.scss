@@ -108,10 +108,11 @@ strong {
   
   // The logo
   h1 {
+    font-size: 1em;
     a, a:link, a:visited {
       background-image: url('/wp-content/themes/logo24-bones/library/images/logo.png');
       height: pem(44px);
-      margin: pem(5px) auto pem(39px) auto;
+      margin: 0 auto pem(39px) auto;
       @extend .ir;
       width: pem(152px);
 
@@ -151,6 +152,9 @@ strong {
     }
 }
 
+.nav li { margin-left: pem(-4px);}
+.nav li:first-child { margin-left: 0; }
+
 
 // <ul> The Nav/Menu bar
 .top-nav, .footer-nav {
@@ -180,6 +184,23 @@ strong {
     }
   }
 }
+
+// Blog 
+
+.blog-wrap{
+    background-color: #EAECE7;
+    padding-left: 2em;
+    padding-right: 2em;
+  article{
+    border-bottom: 1px solid;
+    background-color: #EAECE7;
+    padding-top: 1em;
+    img{
+      width: 95%;
+    }
+  }
+}
+
 
 
 
