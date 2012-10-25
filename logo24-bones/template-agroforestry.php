@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Template
+Template Name: Agroforestry
 */
 get_header(); ?>
 
@@ -8,7 +8,7 @@ get_header(); ?>
     # Add template specific sidebars and menus
     # instead of including the sidebar ?>
     <section class="m-all t1 d1" role="complementary">
-      <?php wp_nav_menu(array('menu'=>'menu-name-here')); ?>
+      <?php wp_nav_menu(array('menu'=>'agroforestry')); ?>
     </section>
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
