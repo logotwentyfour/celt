@@ -34,7 +34,7 @@ get_header(); ?>
           <h3><a href='<?php the_permalink() ?>'
           rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h2>
           
-          <time pubdate datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('F j Y'); ?></time>
+          
           
           <?php the_excerpt(); ?>
         </article>
