@@ -39,12 +39,6 @@ p, ul, ol {
   ul {
     list-style: disc;
   }
-  
-  p, ul, ol {
-    a, a:link, a:visited {
-      border-bottom: 1px dashed #307900;
-    }
-  }
 }
 
 p, ul li {
@@ -357,17 +351,26 @@ a.open-navigation {
 }
 
 // Latest news
+
+.article-wrap{
+    width: 85%;
+  }
+
 .latest-news {
   background-color: #E9FDA7;
   margin-top: 1.5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 1em;
-
   article{
     border-bottom: 1px solid black;  //#484A4E
     margin-bottom: 2em;
     margin-top: 1em;
+
+    img{
+      float: left;
+      margin-right: 1em;
+    }
 
     h3{
       font-weight: bold;
@@ -382,13 +385,13 @@ a.open-navigation {
       a:last-child{
       background: #BCE582;
       color: #374B1D;
-      padding: 0.188em 1em;
-      position: relative;
-      display: inline;
-      margin-top: 0.1em;
+      padding: 0em 1em;
+     // position: relative;
+     // display: inline;
+      //margin-top: 0.1em;
       float: right;
-      right: -3.3em;
-    }
+     // right: -3.3em;    
+       }
   }
   }
 
@@ -443,17 +446,20 @@ a.open-navigation {
 
 // Sidebar
 [role="complementary"] {
-  p {
-    background: $tertiary-color;
+
+  p{
+     background: $tertiary-color;
     padding: 0.875em 1.125em 0.875em 1.125em;
     color: #A46E2A;
-    a {
+    a{
       border-bottom: 1px dashed #307900;
       color: #7A7A7A;
     }
     a:hover, a:focus, a:active {
-      background: darken($tertiary-color,5%);
-    }
+        background: darken($tertiary-color,5%);
+
+      }
+    
   }
   ul {
     background: $tertiary-color;
@@ -558,23 +564,6 @@ a.open-navigation {
   
   .info {
     margin-bottom: 0;
-  }
-}
-
-// Table for Tree Nursery price list - 
-.price-list {
-  border-collapse: separate;
-  border-spacing: 1px;
-  width: 100%;
-  
-  td {
-    background: lighten($brand-color, 45%);
-    padding: pem(3px) pem(6px);
-    
-    &:first-child {
-      background: lighten($brand-color, 35%);
-      font-weight: bold;
-    }
   }
 }
 
