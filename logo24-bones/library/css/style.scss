@@ -32,6 +32,9 @@ p, ul, ol {
 }
 
 [role="main"] {
+  img {max-width: 100%;
+    display: block;
+    margin: 0 auto;}
   ul {
     list-style: disc;
   }
@@ -128,6 +131,10 @@ strong {
     }
   }
   
+  .slider{
+    img{max-width:100%;}
+  }
+
   // The logo subheading.
   h2 {
     @include adjust-font-size-to(22px);
@@ -152,7 +159,11 @@ strong {
     }
 }
 
-.nav li { margin-left: pem(-4px);}
+.top-nav { 
+  li {
+   margin-left: pem(-4px);
+    }
+ }
 .nav li:first-child { margin-left: 0; }
 
 
@@ -185,7 +196,17 @@ strong {
   }
 }
 
+.menu-item-660{
+  float: right;
+  background: #2a8123;
+}
+
 // Blog 
+.blog{
+  article:last-child{
+    border-bottom: none;
+  }
+}
 
 .blog-wrap{
     background-color: #EAECE7;
@@ -199,6 +220,9 @@ strong {
       max-width: 95%;
     }
   }
+  article:last-child{
+      border-bottom: none;
+    }
 }
 
 
@@ -214,7 +238,34 @@ strong {
 
   article{
     border-bottom: 1px solid black;  //#484A4E
-    margin-bottom: 3%;
+    margin-bottom: 2em;
+    margin-top: 1em;
+
+    h3{
+      font-weight: bold;
+      text-transform: capitalize;
+      font-style: italic;
+    }
+
+   p{ 
+    width: 85%;
+    padding-bottom: 1em;
+
+      a:last-child{
+      background: #BCE582;
+      color: #374B1D;
+      padding: 0.188em 1em;
+      position: relative;
+      display: inline;
+      margin-top: 0.1em;
+      float: right;
+      right: -3.3em;
+    }
+  }
+  }
+
+  article:last-child{
+    border-bottom: none;
   }
 }
 
@@ -225,6 +276,7 @@ strong {
   ul{
     list-style: disc;
     margin-left: 1.5em;
+
   }
   
 }
@@ -263,6 +315,21 @@ strong {
 
 // Sidebar
 [role="complementary"] {
+
+  p{
+     background: $tertiary-color;
+    padding: 0.875em 1.125em 0.875em 1.125em;
+    color: #A46E2A;
+    a{
+      border-bottom: 1px dashed #307900;
+      color: #7A7A7A;
+    }
+    a:hover, a:focus, a:active {
+        background: darken($tertiary-color,5%);
+
+      }
+    
+  }
   ul {
     background: $tertiary-color;
     padding: pem(14px) pem(18px) pem(27px) pem(18px);

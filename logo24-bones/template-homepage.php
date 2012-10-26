@@ -42,6 +42,7 @@ get_header(); ?>
           endwhile;
         endif; 
         ?>
+
       </section> <?php # /latest-news ?>
 
     </section> <?php # /main ?>
