@@ -369,6 +369,23 @@ strong {
   }
 }
 
+// Table for Tree Nursery price list
+.price-list {
+  border-collapse: separate;
+  border-spacing: 1px;
+  width: 100%;
+  
+  td {
+    background: lighten($brand-color, 45%);
+    padding: pem(3px) pem(6px);
+    
+    &:first-child {
+      background: lighten($brand-color, 35%);
+      font-weight: bold;
+    }
+  }
+}
+
 //<footer>
 [role='contentinfo'] {
   @include gridset-all;
