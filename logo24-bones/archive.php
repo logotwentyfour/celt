@@ -3,8 +3,19 @@
 			<div id="content">
 			
 				<div id="inner-content" class="wrap clearfix">
+					<section class="m-all t1 d1" role="complementary">
+					     <ul>
+					<?php wp_get_archives('type=monthly'); ?>
+					     </ul>
+
+					         <ul>
+					<?php wp_list_categories( $args ); ?> 
+					     </ul>
+					     </section>
 				
-				    <div id="main" class="eightcol first clearfix" role="main">
+				    <div id="main" class="eightcol first clearfix m-all t2 d2-d4" role="main">
+				    	<div class="blog-wrap">
+				    	<div class="blog">
 				
 					    <?php if (is_category()) { ?>
 						    <h1 class="archive-title h2">
@@ -95,10 +106,11 @@
     				    	</article>
 					
 					    <?php endif; ?>
-			
+
+					</div> <!-- end .blog -->
+				</div> <!-- end .blog-wrap -->
     				</div> <!-- end #main -->
     
-	    			<?php get_sidebar(); ?>
                 
                 </div> <!-- end #inner-content -->
                 
