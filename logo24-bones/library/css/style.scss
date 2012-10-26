@@ -58,21 +58,24 @@ a, a:link, a:visited {
   }
 }
 
+h1, h2, h3 {
+  a, a:link, a:visited {
+    border: none;
+  }
+}
+
 h1 {
   @include adjust-font-size-to(24px);
-  border: none;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 h2 {
-  border: none;
   font-style: italic;
   font-weight: bold;
 }
 
 h3 {
-  border: none;
   color: $brand-color;
   text-transform: uppercase;
 }
