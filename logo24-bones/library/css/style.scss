@@ -362,54 +362,64 @@ a.open-navigation {
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 1em;
-  article{
+  
+  article {
     border-bottom: 1px solid black;  //#484A4E
     margin-bottom: 2em;
     margin-top: 1em;
 
-    img{
+    img {
       float: left;
       margin-right: 1em;
     }
 
-    h3{
+    h3 {
       font-weight: bold;
       text-transform: capitalize;
       font-style: italic;
     }
 
-   p{ 
-    width: 85%;
-    padding-bottom: 1em;
+    p { 
+      width: 85%;
+      padding-bottom: 1em;
 
-      a:last-child{
-      background: #BCE582;
-      color: #374B1D;
-      padding: 0em 1em;
-     // position: relative;
-     // display: inline;
-      //margin-top: 0.1em;
-      float: right;
-     // right: -3.3em;    
-       }
-  }
+      // The Read more link
+      a:last-child {
+        background: #bce582;
+        border-bottom: none;
+        color: #374b1d;
+        @include inline-block;
+        padding: pem(3px) pem(16px);
+      }
+      a:hover, a:focus, a:active {
+        background: darken(#bce582,8%);
+      }
+    }
   }
 
-  article:last-child{
+  article:last-child {
     border-bottom: none;
   }
 }
 
-// Home page
-
-.home-content {
-
-  ul{
-    list-style: disc;
-    margin-left: 1.5em;
-
-  }
+// List of three columns on the home page.
+.activities-list {
+  margin-left: 1.5em;
   
+  li {
+    // (768px @ 16px)
+    @media only screen and (min-width: 48em) {
+      float: left;
+      margin-right: 4%;
+      width: 40%;
+    }
+
+    // (768px @ 16px)
+    @media only screen and (min-width: 64em) {
+      margin-right: 3%;
+      width: 30%;
+    }
+  }
 }
 
 // Gallery Page
@@ -539,6 +549,7 @@ a.open-navigation {
   }
   a, a:link, a:visited {
     background: #bce582;
+    border-bottom: none;
     color: #374b1d;
     display: block;
     padding: pem(3px) pem(16px);
