@@ -23,26 +23,27 @@ get_header(); ?>
       <?php endif; ?>
       
       <section class="latest-news"> 
-      <h1>LATEST NEWS</h1>
+        <h1>Latest News</h1>
         
-      <?php 
-      query_posts('posts_per_page=5'); 
-      if(have_posts()):
-        while(have_posts()): the_post();
-      ?>
-        <article>
-          <h3><a href='<?php the_permalink() ?>'
-          rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h2>
-          
-          
-          
-          <?php the_excerpt(); ?>
-        </article>
-      <?php
-        endwhile;
-      endif; 
-      ?>
-
+        <?php 
+        query_posts('posts_per_page=5'); 
+        if(have_posts()):
+          while(have_posts()): the_post();
+        ?>
+          <article>
+            <?php if ( has_post_thumbnail() ) {
+              the_post_thumbnail();
+            } ?>
+            <div class="article-wrap">
+            <h3><a href='<?php the_permalink() ?>'
+            rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h2>  
+            <?php the_excerpt(); ?>
+            </div>
+          </article>
+        <?php
+          endwhile;
+        endif; 
+        ?>
       </section> <?php # /latest-news ?>
 
     </section> <?php # /main ?>
