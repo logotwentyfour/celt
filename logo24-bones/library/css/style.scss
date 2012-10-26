@@ -39,8 +39,10 @@ p, ul, ol {
     list-style: disc;
   }
   
-  a, a:link, a:visited {
-    border-bottom: 1px dashed #307900;
+  p, ul, ol {
+    a, a:link, a:visited {
+      border-bottom: 1px dashed #307900;
+    }
   }
 }
 
@@ -55,12 +57,6 @@ a, a:link, a:visited {
   
   &:hover, &:active, &:focus {
     color: $brand-color;
-  }
-}
-
-h1, h2, h3 {
-  a, a:link, a:visited {
-    border: none;
   }
 }
 
