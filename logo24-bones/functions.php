@@ -148,4 +148,10 @@ function remove_footer_admin ()
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 
+// Changing excerpt length - only works with AUTO excerpt
+add_filter('excerpt_length', 'new_excerpt_length');
+function new_excerpt_length($length) {
+    return 30;
+}
+
 ?>
