@@ -1700,68 +1700,70 @@ a:hover, a:active, a:focus, a:link:hover, a:link:active, a:link:focus, a:visited
   color: #6ba74d;
 }
 
-/* line 61, style.scss */
+/* line 62, style.scss */
+h1 a, h1 a:link, h1 a:visited, h2 a, h2 a:link, h2 a:visited, h3 a, h3 a:link, h3 a:visited {
+  border: none;
+}
+
+/* line 67, style.scss */
 h1 {
   font-size: 1.5em;
   line-height: 2em;
-  border: none;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 68, style.scss */
+/* line 73, style.scss */
 h2 {
-  border: none;
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 74, style.scss */
+/* line 78, style.scss */
 h3 {
-  border: none;
   color: #6ba74d;
   text-transform: uppercase;
 }
 
-/* line 80, style.scss */
+/* line 83, style.scss */
 i {
   font-style: normal;
 }
 
-/* line 84, style.scss */
+/* line 87, style.scss */
 strong {
   font-weight: normal;
 }
 
-/* line 88, style.scss */
+/* line 91, style.scss */
 .wrapper {
   overflow: hidden;
   *zoom: 1;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
-  /* line 88, style.scss */
+  /* line 91, style.scss */
   .wrapper {
     max-width: 768px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 88, style.scss */
+  /* line 91, style.scss */
   .wrapper {
     max-width: 1024px;
   }
 }
 
-/* line 101, style.scss */
+/* line 104, style.scss */
 .page {
   margin-top: 1.5em;
 }
 
-/* line 105, style.scss */
+/* line 108, style.scss */
 .copyright {
   margin-top: 2em;
 }
-/* line 107, style.scss */
+/* line 110, style.scss */
 .copyright p {
   text-align: center;
   font-size: 0.8em;
@@ -1769,16 +1771,16 @@ strong {
   margin-bottom: 0;
 }
 
-/* line 116, style.scss */
+/* line 119, style.scss */
 [role="banner"] {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 120, style.scss */
+/* line 123, style.scss */
 [role="banner"] h1 {
   font-size: 1em;
 }
-/* line 122, style.scss */
+/* line 125, style.scss */
 [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
   background-image: url("/wp-content/themes/logo24-bones/library/images/logo.png");
   height: 2.75em;
@@ -1786,29 +1788,29 @@ strong {
   width: 9.5em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 122, style.scss */
+  /* line 125, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     margin-left: 2.9375em;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 122, style.scss */
+  /* line 125, style.scss */
   [role="banner"] h1 a, [role="banner"] h1 a:link, [role="banner"] h1 a:visited {
     background-image: url("/wp-content/themes/logo24-bones/library/images/logo@2x.png");
     background-size: 100%;
   }
 }
-/* line 142, style.scss */
+/* line 145, style.scss */
 [role="banner"] .slider img {
   max-width: 100%;
 }
-/* line 146, style.scss */
+/* line 149, style.scss */
 [role="banner"] h2 {
   font-size: 1.375em;
   line-height: 2.18182em;
 }
 
-/* line 153, style.scss */
+/* line 156, style.scss */
 .sub-menu {
   display: none;
   float: left;
@@ -1820,36 +1822,36 @@ strong {
   z-index: 99999;
   background-color: #6ba74d;
 }
-/* line 164, style.scss */
+/* line 167, style.scss */
 .sub-menu a {
   border-right: none !important;
 }
 
-/* line 170, style.scss */
+/* line 173, style.scss */
 .top-nav li {
   margin-left: -0.25em;
 }
 
-/* line 174, style.scss */
+/* line 177, style.scss */
 .nav li:first-child {
   margin-left: 0;
 }
 
-/* line 178, style.scss */
+/* line 181, style.scss */
 .top-nav, .footer-nav {
   background-color: #6ba74d;
 }
-/* line 181, style.scss */
+/* line 184, style.scss */
 .top-nav li, .footer-nav li {
   display: inline;
   position: relative;
 }
-/* line 187, style.scss */
+/* line 190, style.scss */
 .top-nav li:hover .sub-menu, .footer-nav li:hover .sub-menu {
   display: block;
   background-color: #6ba74d;
 }
-/* line 193, style.scss */
+/* line 196, style.scss */
 .top-nav li a, .top-nav li a:link, .top-nav li a:visited, .footer-nav li a, .footer-nav li a:link, .footer-nav li a:visited {
   border-right: 1px solid #4c9644;
   color: #fff;
@@ -1861,43 +1863,44 @@ strong {
   *display: inline;
   padding: 0.4375em 1.125em;
 }
-/* line 200, style.scss */
+/* line 203, style.scss */
 .top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active, .footer-nav li a:hover, .footer-nav li a:focus, .footer-nav li a:active {
   background: #4c9644;
 }
 
-/* line 206, style.scss */
+/* line 209, style.scss */
 .menu-item-660 {
   float: right;
   background: #2a8123;
 }
 
-/* line 213, style.scss */
+/* line 216, style.scss */
 .blog article:last-child {
   border-bottom: none;
 }
 
-/* line 218, style.scss */
+/* line 221, style.scss */
 .blog-wrap {
   background-color: #EAECE7;
   padding-left: 2em;
   padding-right: 2em;
 }
-/* line 222, style.scss */
+/* line 225, style.scss */
 .blog-wrap article {
   border-bottom: 1px solid;
   background-color: #EAECE7;
   padding-top: 1em;
 }
-/* line 226, style.scss */
+/* line 229, style.scss */
 .blog-wrap article img {
   max-width: 95%;
 }
-/* line 230, style.scss */
+/* line 233, style.scss */
 .blog-wrap article:last-child {
   border-bottom: none;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* line 233, style.scss */
 .article-wrap {
@@ -1908,6 +1911,9 @@ strong {
 =======
 /* line 239, style.scss */
 >>>>>>> origin/master
+=======
+/* line 242, style.scss */
+>>>>>>> origin/master
 .latest-news {
   background-color: #E9FDA7;
   margin-top: 1.5em;
@@ -1916,15 +1922,20 @@ strong {
   padding-bottom: 1em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 243, style.scss */
 =======
 /* line 246, style.scss */
+>>>>>>> origin/master
+=======
+/* line 249, style.scss */
 >>>>>>> origin/master
 .latest-news article {
   border-bottom: 1px solid black;
   margin-bottom: 2em;
   margin-top: 1em;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* line 248, style.scss */
 .latest-news article img {
@@ -1935,24 +1946,35 @@ strong {
 =======
 /* line 251, style.scss */
 >>>>>>> origin/master
+=======
+/* line 254, style.scss */
+>>>>>>> origin/master
 .latest-news article h3 {
   font-weight: bold;
   text-transform: capitalize;
   font-style: italic;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 259, style.scss */
 =======
 /* line 257, style.scss */
+>>>>>>> origin/master
+=======
+/* line 260, style.scss */
 >>>>>>> origin/master
 .latest-news article p {
   width: 85%;
   padding-bottom: 1em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 263, style.scss */
 =======
 /* line 261, style.scss */
+>>>>>>> origin/master
+=======
+/* line 264, style.scss */
 >>>>>>> origin/master
 .latest-news article p a:last-child {
   background: #BCE582;
@@ -1961,18 +1983,26 @@ strong {
   float: right;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 276, style.scss */
 =======
 /* line 274, style.scss */
+>>>>>>> origin/master
+=======
+/* line 277, style.scss */
 >>>>>>> origin/master
 .latest-news article:last-child {
   border-bottom: none;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 285, style.scss */
 =======
 /* line 283, style.scss */
+>>>>>>> origin/master
+=======
+/* line 286, style.scss */
 >>>>>>> origin/master
 .home-content ul {
   list-style: disc;
@@ -1980,9 +2010,13 @@ strong {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 294, style.scss */
 =======
 /* line 292, style.scss */
+>>>>>>> origin/master
+=======
+/* line 295, style.scss */
 >>>>>>> origin/master
 .gallery-wrap {
   background-color: #DCF1FF;
@@ -1991,18 +2025,26 @@ strong {
   padding-left: 1em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 299, style.scss */
 =======
 /* line 297, style.scss */
+>>>>>>> origin/master
+=======
+/* line 300, style.scss */
 >>>>>>> origin/master
 .gallery-wrap img {
   height: auto;
 }
 @media only screen and (min-width: 30em) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 300, style.scss */
 =======
   /* line 298, style.scss */
+>>>>>>> origin/master
+=======
+  /* line 301, style.scss */
 >>>>>>> origin/master
   .gallery-wrap figure {
     width: 50%;
@@ -2010,9 +2052,13 @@ strong {
 }
 @media only screen and (min-width: 62.5em) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 300, style.scss */
 =======
   /* line 298, style.scss */
+>>>>>>> origin/master
+=======
+  /* line 301, style.scss */
 >>>>>>> origin/master
   .gallery-wrap figure {
     width: 33.3%;
@@ -2020,15 +2066,20 @@ strong {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 310, style.scss */
 =======
 /* line 308, style.scss */
+>>>>>>> origin/master
+=======
+/* line 311, style.scss */
 >>>>>>> origin/master
 .gallery-heading {
   font-weight: bold;
   padding-left: 1em;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* line 316, style.scss */
 .gallery-sub-pictures-container figure {
@@ -2042,14 +2093,25 @@ strong {
 }
 /* line 317, style.scss */
 >>>>>>> origin/master
+=======
+/* line 317, style.scss */
+.gallery-sub-pictures-container figure {
+  padding-left: 0em;
+}
+/* line 320, style.scss */
+>>>>>>> origin/master
 .gallery-sub-pictures-container .gallery-heading {
   display: none;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 328, style.scss */
 =======
 /* line 325, style.scss */
+>>>>>>> origin/master
+=======
+/* line 328, style.scss */
 >>>>>>> origin/master
 [role="complementary"] p {
   background: #ffed91;
@@ -2057,14 +2119,19 @@ strong {
   color: #A46E2A;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 332, style.scss */
 =======
 /* line 329, style.scss */
+>>>>>>> origin/master
+=======
+/* line 332, style.scss */
 >>>>>>> origin/master
 [role="complementary"] p a {
   border-bottom: 1px dashed #307900;
   color: #7A7A7A;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* line 336, style.scss */
 [role="complementary"] p a:hover, [role="complementary"] p a:focus, [role="complementary"] p a:active {
@@ -2078,14 +2145,25 @@ strong {
 }
 /* line 337, style.scss */
 >>>>>>> origin/master
+=======
+/* line 336, style.scss */
+[role="complementary"] p a:hover, [role="complementary"] p a:focus, [role="complementary"] p a:active {
+  background: #ffe978;
+}
+/* line 340, style.scss */
+>>>>>>> origin/master
 [role="complementary"] ul {
   background: #ffed91;
   padding: 0.875em 1.125em 1.6875em 1.125em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 347, style.scss */
 =======
 /* line 342, style.scss */
+>>>>>>> origin/master
+=======
+/* line 345, style.scss */
 >>>>>>> origin/master
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
@@ -2094,36 +2172,52 @@ strong {
   padding: 0.625em 0 0.3125em 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 354, style.scss */
 =======
 /* line 349, style.scss */
+>>>>>>> origin/master
+=======
+/* line 352, style.scss */
 >>>>>>> origin/master
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 362, style.scss */
 =======
 /* line 357, style.scss */
+>>>>>>> origin/master
+=======
+/* line 360, style.scss */
 >>>>>>> origin/master
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 366, style.scss */
 =======
 /* line 361, style.scss */
+>>>>>>> origin/master
+=======
+/* line 364, style.scss */
 >>>>>>> origin/master
 .p404 h1 {
   font-size: 8.3125em;
   line-height: 1.08271em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 370, style.scss */
 =======
 /* line 365, style.scss */
+>>>>>>> origin/master
+=======
+/* line 368, style.scss */
 >>>>>>> origin/master
 .p404 h2 {
   font-size: 1.375em;
@@ -2133,9 +2227,13 @@ strong {
   margin-bottom: 1.5em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 377, style.scss */
 =======
 /* line 372, style.scss */
+>>>>>>> origin/master
+=======
+/* line 375, style.scss */
 >>>>>>> origin/master
 .p404 p {
   font-size: 1em;
@@ -2144,14 +2242,19 @@ strong {
   line-height: 1.25em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 383, style.scss */
 =======
 /* line 378, style.scss */
+>>>>>>> origin/master
+=======
+/* line 381, style.scss */
 >>>>>>> origin/master
 .p404 i {
   display: block;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* line 388, style.scss */
 .course-index-list {
@@ -2165,6 +2268,13 @@ strong {
 }
 /* line 386, style.scss */
 >>>>>>> origin/master
+=======
+/* line 386, style.scss */
+.course-index-list {
+  padding-bottom: 2em;
+}
+/* line 389, style.scss */
+>>>>>>> origin/master
 .course-index-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -2173,9 +2283,13 @@ strong {
   position: relative;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 398, style.scss */
 =======
 /* line 393, style.scss */
+>>>>>>> origin/master
+=======
+/* line 396, style.scss */
 >>>>>>> origin/master
 .course-index-list .date {
   position: absolute;
@@ -2184,9 +2298,13 @@ strong {
   width: 14em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 404, style.scss */
 =======
 /* line 399, style.scss */
+>>>>>>> origin/master
+=======
+/* line 402, style.scss */
 >>>>>>> origin/master
 .course-index-list .title {
   float: left;
@@ -2196,9 +2314,13 @@ strong {
   text-transform: uppercase;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 413, style.scss */
 =======
 /* line 408, style.scss */
+>>>>>>> origin/master
+=======
+/* line 411, style.scss */
 >>>>>>> origin/master
 .course-index-list p {
   position: absolute;
@@ -2206,9 +2328,13 @@ strong {
   top: 0.8125em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 418, style.scss */
 =======
 /* line 413, style.scss */
+>>>>>>> origin/master
+=======
+/* line 416, style.scss */
 >>>>>>> origin/master
 .course-index-list a, .course-index-list a:link, .course-index-list a:visited {
   background: #bce582;
@@ -2217,14 +2343,19 @@ strong {
   padding: 0.1875em 1em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 424, style.scss */
 =======
 /* line 419, style.scss */
+>>>>>>> origin/master
+=======
+/* line 422, style.scss */
 >>>>>>> origin/master
 .course-index-list a:hover, .course-index-list a:focus, .course-index-list a:active {
   background: #aade60;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* line 429, style.scss */
 .course-show-list {
@@ -2238,6 +2369,13 @@ strong {
 }
 /* line 427, style.scss */
 >>>>>>> origin/master
+=======
+/* line 427, style.scss */
+.course-show-list {
+  padding-bottom: 2em;
+}
+/* line 430, style.scss */
+>>>>>>> origin/master
 .course-show-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -2246,44 +2384,60 @@ strong {
   position: relative;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 439, style.scss */
 =======
 /* line 434, style.scss */
+>>>>>>> origin/master
+=======
+/* line 437, style.scss */
 >>>>>>> origin/master
 .course-show-list .date {
   font-size: 0.875em;
   line-height: 1.71429em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 443, style.scss */
 =======
 /* line 438, style.scss */
+>>>>>>> origin/master
+=======
+/* line 441, style.scss */
 >>>>>>> origin/master
 .course-show-list .info {
   margin-bottom: 0;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 449, style.scss */
 =======
 /* line 444, style.scss */
+=======
+/* line 447, style.scss */
+>>>>>>> origin/master
 .price-list {
   border-collapse: separate;
   border-spacing: 1px;
   width: 100%;
 }
-/* line 449, style.scss */
+/* line 452, style.scss */
 .price-list td {
   background: #ebf3e6;
   padding: 0.1875em 0.375em;
 }
-/* line 453, style.scss */
+/* line 456, style.scss */
 .price-list td:first-child {
   background: #cee3c3;
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* line 461, style.scss */
+>>>>>>> origin/master
+=======
+/* line 464, style.scss */
 >>>>>>> origin/master
 [role='contentinfo'] {
   clear: left;
