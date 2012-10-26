@@ -12,6 +12,7 @@
 @import "helpers";
 @import "twitter-bootstrap";
 @import "gridset";
+@import "font-awesome";
 
 // Compass variables for vertical rhythm
 $base-font-size: 16px;
@@ -23,7 +24,7 @@ $base-line-height: 24px;
 body {
   background-color: #fff;
   color: $primary-text-color;
-  padding: 2em;
+  padding: 0 2em 2em 2em;
   @include primary-typeface;
 }
 
@@ -97,6 +98,43 @@ strong {
   }
 }
 
+.social-icons {
+  position: absolute;
+  right: pem(-8px);
+  top: pem(10px);
+  
+  // (880px @ 16px)
+  @media only screen and (min-width: 55em) {
+    top: pem(30px);
+  }
+  
+  .icon-facebook-sign {
+    color: #506eaa; // Facebook Blue
+  }
+  
+  .icon-google-plus-sign {
+    color: #bb2e24; // Google Plus Red
+  }
+  
+  a:hover, a:focus, a:active {
+    .icon-facebook-sign {
+      color: darken(#506eaa,5%);
+    }
+    .icon-google-plus-sign {
+      color: darken(#bb2e24,5%);
+    }
+  }
+  
+  a, a:link, a:visited {
+    font-size: 2.188em;
+  }
+  
+  b {
+    // Hide assistive text.
+    @extend .visually-hidden;
+  }
+}
+
 .page{
   margin-top: 1.5em;
 }
@@ -114,6 +152,13 @@ strong {
 // <header>
 [role="banner"] {
   @include clearfix;
+  padding-top: pem(10px);
+  position: relative;
+  
+  // (880px @ 16px)
+  @media only screen and (min-width: 55em) {
+    padding-top: 2em;
+  }
   
   // The logo
   h1 {
@@ -121,13 +166,15 @@ strong {
     a, a:link, a:visited {
       background-image: url('/wp-content/themes/logo24-bones/library/images/logo.png');
       height: pem(44px);
-      margin: 0 auto pem(39px) auto;
+      margin: 0 auto pem(20px) auto;
       @extend .ir;
       width: pem(152px);
-
-      // (480 @ 16px)
-      @media only screen and (min-width: 30em) {
+      
+      // (880px @ 16px)
+      @media only screen and (min-width: 55em) {
+        float: left;
         margin-left: pem(47px);
+        margin-bottom: pem(39px);
       }
 
       @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
@@ -138,12 +185,49 @@ strong {
   }
   
   .slider{
-    img{max-width:100%;}
+    img {
+      max-width: 100%;
+    }
   }
 
   // The logo subheading.
   h2 {
-    @include adjust-font-size-to(22px);
+    @include adjust-font-size-to(16px);
+    color: #2B8123;
+    line-height: 1em;
+    margin-bottom: pem(6px);
+    text-align: center;
+    
+    // (880px @ 16px)
+    @media only screen and (min-width: 55em) {
+      @include adjust-font-size-to(22px);
+      @include scale(margin-left, 270px, 22px);
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+}
+
+// “Navigation” link at small screens to open navigation.
+// Toggle icon for menu. Visible only on small screens.
+
+// Only show if js is supported
+.js a.open-navigation {
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}
+a.open-navigation {
+  background: $brand-color;
+  color: #fff;
+  display: none;
+  padding: pem(7px) 0;
+  text-align: center;
+  width: 100%;
+  
+  &:hover, &:active, &:focus {
+    background: $secondary-color;
+    color: #fff;
   }
 }
 
@@ -156,21 +240,42 @@ strong {
   position: absolute;
   text-align: left;
   left: 0;
-  width: pem(200px); // Adjust this value as required.
+  width: pem(200px);
   z-index: 99999;
   background-color: $brand-color;
 
-    a{
-      border-right: none !important;
-    }
+  a {
+    border-right: none !important;
+  }
 }
 
-.top-nav { 
-  li {
-   margin-left: pem(-4px);
+.js .top-nav {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+// (768px @ 16px)
+@media only screen and (min-width: 769px) {
+  // Show nav on big screens and when js isn't supported.
+  .top-nav {
+    display: block !important; // To override js inline style
+    opacity: 1;
+  }
+}
+
+// (768px @ 16px)
+@media only screen and (min-width: 48em) {
+  // Fix weird spacing issue between items.
+  .top-nav, .footer-nav { 
+    li {
+      margin-left: pem(-4px);
     }
- }
-.nav li:first-child { margin-left: 0; }
+  }
+}
+.nav li:first-child { 
+  margin-left: 0;
+}
 
 
 // <ul> The Nav/Menu bar
@@ -178,22 +283,39 @@ strong {
   background-color: $brand-color;
   
   li {
-    display: inline;
+    display: block;
     position: relative;
+    width: 100%;
     
-    // open the sub menu
-    &:hover {
-      .sub-menu {
-        display: block;
-        background-color: $brand-color;
+    // (768px @ 16px)
+    @media only screen and (min-width: 48em) {
+      display: inline;
+      width: auto;
+    }
+    
+    // (768px @ 16px)
+    @media only screen and (min-width: 48em) {
+      // open the sub menu
+      &:hover {
+        .sub-menu {
+          display: block;
+          background-color: $brand-color;
+        }
       }
     }
     
     a, a:link, a:visited {
-      border-right: 1px solid $secondary-color;
       color: #fff;
       @include inline-block;
-      padding: pem(7px) pem(18px);
+      padding: pem(7px) 0 pem(7px) pem(18px);
+      width: 100%;
+      
+      // (768px @ 16px)
+      @media only screen and (min-width: 48em) {
+        border-right: 1px solid $secondary-color;
+        padding: pem(7px) pem(18px);
+        width: auto;
+      }
     }
     
     a:hover, a:focus, a:active {
@@ -202,37 +324,37 @@ strong {
   }
 }
 
-.menu-item-660{
+// Move the Join link to the far right and make it darker.
+.menu-item-660 {
   float: right;
   background: #2a8123;
 }
 
 // Blog 
-.blog{
-  article:last-child{
+.blog {
+  article:last-child {
     border-bottom: none;
   }
 }
 
-.blog-wrap{
-    background-color: #EAECE7;
-    padding-left: 2em;
-    padding-right: 2em;
-  article{
+.blog-wrap {
+  background-color: #EAECE7;
+  padding-left: 2em;
+  padding-right: 2em;
+  
+  article {
     border-bottom: 1px solid;
     background-color: #EAECE7;
     padding-top: 1em;
-    img{
+    
+    img {
       max-width: 95%;
     }
   }
-  article:last-child{
-      border-bottom: none;
-    }
+  article:last-child {
+    border-bottom: none;
+  }
 }
-
-
-
 
 // Latest news
 .latest-news {

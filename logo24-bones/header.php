@@ -58,15 +58,23 @@
   <div class="wrapper">
   
     <header role="banner">
-      <h1>
-        <a href="/" title="Return to the home page">
-          CELT
-          <img src="<?php bloginfo('template_directory'); ?>/library/images/logo.png" alt="CELT" class="visually-hidden"/>
-        </a>
-      </h1>
+      <hgroup>
+        <h1>
+          <a href="/" title="Return to the home page">
+            CELT
+            <img src="<?php bloginfo('template_directory'); ?>/library/images/logo.png" alt="CELT" class="visually-hidden"/>
+          </a>
+        </h1>
+        <h2>Centre for Environmental Learning and Training</h2>
+      </hgroup>
+      <ul class="social-icons">
+        <li><a href="https://www.facebook.com/celt.celt" target="_blank"><i class="icon-facebook-sign"></i> <b>Like us on Facebook</b></a></li>
+        <li><a href="https://plus.google.com/105816629404868452562/posts" target="_blank"><i class="icon-google-plus-sign"></i> <b>Add us on Google Plus</b></a></li>
+      </ul>
     </header>
     
     <nav role="navigation">
+      <a href="#menu-main" class="open-navigation" title="Open navigation">Navigation</a>
       <?php bones_main_nav(); ?>
     </nav>
 
