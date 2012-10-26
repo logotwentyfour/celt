@@ -38,6 +38,10 @@ p, ul, ol {
   ul {
     list-style: disc;
   }
+  
+  a, a:link, a:visited {
+    border-bottom: 1px dashed #307900;
+  }
 }
 
 p, ul li {
@@ -56,16 +60,19 @@ a, a:link, a:visited {
 
 h1 {
   @include adjust-font-size-to(24px);
+  border: none;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 h2 {
+  border: none;
   font-style: italic;
   font-weight: bold;
 }
 
 h3 {
+  border: none;
   color: $brand-color;
   text-transform: uppercase;
 }
@@ -315,20 +322,17 @@ strong {
 
 // Sidebar
 [role="complementary"] {
-
-  p{
-     background: $tertiary-color;
+  p {
+    background: $tertiary-color;
     padding: 0.875em 1.125em 0.875em 1.125em;
     color: #A46E2A;
-    a{
+    a {
       border-bottom: 1px dashed #307900;
       color: #7A7A7A;
     }
     a:hover, a:focus, a:active {
-        background: darken($tertiary-color,5%);
-
-      }
-    
+      background: darken($tertiary-color,5%);
+    }
   }
   ul {
     background: $tertiary-color;
