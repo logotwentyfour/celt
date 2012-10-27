@@ -57,8 +57,8 @@ a, a:link, a:visited {
 
 h1 {
   @include adjust-font-size-to(24px);
-  text-transform: uppercase;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -265,7 +265,7 @@ a.open-navigation {
 @media only screen and (min-width: 48em) {
   // Fix weird spacing issue between items.
   .top-nav, .footer-nav { 
-    li {
+    & > li {
       margin-left: pem(-4px);
     }
   }
@@ -429,15 +429,38 @@ a.open-navigation {
 // Gallery Page
 .gallery-wrap {
   background-color: #DCF1FF;
-  padding-top: pem(20px);
-  padding-right: 1em;
-  padding-left: 1em;
+  padding: 1.5em 0;
   
   img {
     height: auto;
   }
   
+  // Add cool fading in box shadow on hover.
+  a, a:link, a:visited {
+    img {
+      @include transition(all, .2s, ease-in-out);
+    }
+  }
+  
+  figcaption {
+    color: darken(#DCF1FF,55%);
+  }
+
+  a:hover, a:focus, a:active {
+    img {
+      @include box-shadow(0px, 1px, 7px, #333); // rgba fallback
+      @include box-shadow(0px, 1px, 7px, rgba(0, 0, 0, 0.7));
+    }
+    figcaption {
+      color: darken(#DCF1FF,60%);
+    }
+  }
+  
+  // Change from 1, to 2, to 3 columns
   figure {
+    padding: 0 1.5em;
+    width: 100%;
+    
     @media only screen and (min-width: 30em) {
       width: 50%;
     }
@@ -445,20 +468,57 @@ a.open-navigation {
       width: 33.3%;
     }
   }
+
 }
 
-.gallery-heading {
-  font-weight: bold;
-  padding-left: 1em;
-}
-
-.gallery-sub-pictures-container{
-  figure{
-    padding-left: 0em;
-  }
-  .gallery-heading{
+.gallery-sub-pictures-container {
+  .gallery-heading {
     display: none;
   }
+}
+
+div#kpg-album-description {
+  padding: 0;
+  
+  #kpg-title {
+    color: $primary-text-color;
+    font-style: italic;
+    margin-left: pem(40px);
+    margin-bottom: 1.5em;
+  }
+}
+
+// Gallery backlink wrap.
+div#kpg-backLink {
+  margin: 0;
+}
+
+// The Gallery back link.
+div#kpg-backLink a {
+  color: darken(#DCF1FF,55%);
+  float: none;
+  font-size: pem(16px);
+  text-transform: none;
+  border-bottom: 1px dashed #307900;
+  margin-bottom: 0;
+  margin-left: pem(40px);
+  
+  &:hover, &:focus, &:active {
+    color: darken(#DCF1FF,60%);
+  }
+  
+  // (480 @ 16px)
+  @media only screen and (min-width: 30em) {
+    float: right;
+    margin-right: pem(40px);
+  }
+}
+
+// Override plugin style - remove padding from sub gallery images
+.gallery-sub-pictures-container img {
+  margin-bottom: 1.5em !important;
+  padding: 0;
+  display: block;
 }
 
 

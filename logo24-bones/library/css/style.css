@@ -2851,8 +2851,8 @@ a:hover, a:active, a:focus, a:link:hover, a:link:active, a:link:focus, a:visited
 h1 {
   font-size: 1.5em;
   line-height: 2em;
-  text-transform: uppercase;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* line 64, style.scss */
@@ -3072,7 +3072,7 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
 }
 @media only screen and (min-width: 48em) {
   /* line 268, style.scss */
-  .top-nav li, .footer-nav li {
+  .top-nav > li, .footer-nav > li {
     margin-left: -0.25em;
   }
 }
@@ -3241,89 +3241,152 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
 /* line 430, style.scss */
 .gallery-wrap {
   background-color: #DCF1FF;
-  padding-top: 1.25em;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding: 1.5em 0;
 }
-/* line 436, style.scss */
+/* line 434, style.scss */
 .gallery-wrap img {
   height: auto;
 }
+/* line 440, style.scss */
+.gallery-wrap a img, .gallery-wrap a:link img, .gallery-wrap a:visited img {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 445, style.scss */
+.gallery-wrap figcaption {
+  color: #0075c3;
+}
+/* line 450, style.scss */
+.gallery-wrap a:hover img, .gallery-wrap a:focus img, .gallery-wrap a:active img {
+  -webkit-box-shadow: 0px 1px 7px #333333;
+  -moz-box-shadow: 0px 1px 7px #333333;
+  box-shadow: 0px 1px 7px #333333;
+  -webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+}
+/* line 454, style.scss */
+.gallery-wrap a:hover figcaption, .gallery-wrap a:focus figcaption, .gallery-wrap a:active figcaption {
+  color: #0065a9;
+}
+/* line 460, style.scss */
+.gallery-wrap figure {
+  padding: 0 1.5em;
+  width: 100%;
+}
 @media only screen and (min-width: 30em) {
-  /* line 440, style.scss */
+  /* line 460, style.scss */
   .gallery-wrap figure {
     width: 50%;
   }
 }
 @media only screen and (min-width: 62.5em) {
-  /* line 440, style.scss */
+  /* line 460, style.scss */
   .gallery-wrap figure {
     width: 33.3%;
   }
 }
 
-/* line 450, style.scss */
-.gallery-heading {
-  font-weight: bold;
-  padding-left: 1em;
-}
-
-/* line 456, style.scss */
-.gallery-sub-pictures-container figure {
-  padding-left: 0em;
-}
-/* line 459, style.scss */
+/* line 475, style.scss */
 .gallery-sub-pictures-container .gallery-heading {
   display: none;
 }
 
-/* line 466, style.scss */
+/* line 480, style.scss */
+div#kpg-album-description {
+  padding: 0;
+}
+/* line 483, style.scss */
+div#kpg-album-description #kpg-title {
+  color: #444444;
+  font-style: italic;
+  margin-left: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 492, style.scss */
+div#kpg-backLink {
+  margin: 0;
+}
+
+/* line 497, style.scss */
+div#kpg-backLink a {
+  color: #0075c3;
+  float: none;
+  font-size: 1em;
+  text-transform: none;
+  border-bottom: 1px dashed #307900;
+  margin-bottom: 0;
+  margin-left: 2.5em;
+}
+/* line 506, style.scss */
+div#kpg-backLink a:hover, div#kpg-backLink a:focus, div#kpg-backLink a:active {
+  color: #0065a9;
+}
+@media only screen and (min-width: 30em) {
+  /* line 497, style.scss */
+  div#kpg-backLink a {
+    float: right;
+    margin-right: 2.5em;
+  }
+}
+
+/* line 518, style.scss */
+.gallery-sub-pictures-container img {
+  margin-bottom: 1.5em !important;
+  padding: 0;
+  display: block;
+}
+
+/* line 526, style.scss */
 [role="complementary"] {
   margin-top: 0.875em;
 }
-/* line 469, style.scss */
+/* line 529, style.scss */
 [role="complementary"] p {
   background: #ffed91;
   padding: 2.125em 1.25em;
   color: #A46E2A;
 }
-/* line 474, style.scss */
+/* line 534, style.scss */
 [role="complementary"] p a {
   border-bottom: 1px dashed #307900;
   color: #7A7A7A;
 }
-/* line 479, style.scss */
+/* line 539, style.scss */
 [role="complementary"] p a:hover, [role="complementary"] p a:focus, [role="complementary"] p a:active {
   background: #ffe978;
 }
-/* line 484, style.scss */
+/* line 544, style.scss */
 [role="complementary"] ul {
   background: #ffed91;
   padding: 2.125em 1.25em;
 }
-/* line 489, style.scss */
+/* line 549, style.scss */
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
   padding: 0.625em 0 0.3125em 0;
 }
-/* line 496, style.scss */
+/* line 556, style.scss */
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   background: #ffe978;
 }
 
-/* line 504, style.scss */
+/* line 564, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 508, style.scss */
+/* line 568, style.scss */
 .p404 h1 {
   font-size: 8.3125em;
   line-height: 1.08271em;
 }
-/* line 512, style.scss */
+/* line 572, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.18182em;
@@ -3331,23 +3394,23 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 519, style.scss */
+/* line 579, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-/* line 525, style.scss */
+/* line 585, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 530, style.scss */
+/* line 590, style.scss */
 .course-index-list {
   padding-bottom: 2em;
 }
-/* line 533, style.scss */
+/* line 593, style.scss */
 .course-index-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -3355,14 +3418,14 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   padding: 1em 0;
   position: relative;
 }
-/* line 540, style.scss */
+/* line 600, style.scss */
 .course-index-list .date {
   position: absolute;
   left: 0;
   top: 1em;
   width: 14em;
 }
-/* line 546, style.scss */
+/* line 606, style.scss */
 .course-index-list .title {
   float: left;
   margin-left: 16.5625em;
@@ -3370,13 +3433,13 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   padding-right: 2.5em;
   text-transform: uppercase;
 }
-/* line 555, style.scss */
+/* line 615, style.scss */
 .course-index-list p {
   position: absolute;
   right: 0;
   top: 0.8125em;
 }
-/* line 560, style.scss */
+/* line 620, style.scss */
 .course-index-list a, .course-index-list a:link, .course-index-list a:visited {
   background: #bce582;
   border-bottom: none;
@@ -3384,16 +3447,16 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   display: block;
   padding: 0.1875em 1em;
 }
-/* line 567, style.scss */
+/* line 627, style.scss */
 .course-index-list a:hover, .course-index-list a:focus, .course-index-list a:active {
   background: #aade60;
 }
 
-/* line 572, style.scss */
+/* line 632, style.scss */
 .course-show-list {
   padding-bottom: 2em;
 }
-/* line 575, style.scss */
+/* line 635, style.scss */
 .course-show-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -3401,17 +3464,17 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   padding: 1em 0;
   position: relative;
 }
-/* line 582, style.scss */
+/* line 642, style.scss */
 .course-show-list .date {
   font-size: 0.875em;
   line-height: 1.71429em;
 }
-/* line 586, style.scss */
+/* line 646, style.scss */
 .course-show-list .info {
   margin-bottom: 0;
 }
 
-/* line 592, style.scss */
+/* line 652, style.scss */
 [role='contentinfo'] {
   clear: left;
   float: left;
