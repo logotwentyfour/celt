@@ -3,17 +3,16 @@
 			<div id="content">
 			
 				<div id="inner-content" class="wrap clearfix">
-					<section class="m-all t1 d1"> <!-- search button -->
-					<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-					<div><input type="text" size="put_a_size_here" name="s" id="s"/>
-					<input type="submit" id="searchsubmit" value="Search" class="btn" />
-					</div>
-					</form>
-				</section>
 					<section class="m-all t1 d1" role="complementary"> <!--sidebar -->
-
+            <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+  					  <div>
+  					    <input type="text" name="s" id="s"/>
+  					    <input type="submit" id="searchsubmit" value="Search" class="btn" />
+  					  </div>
+  					</form>
+  					
+  					<h3>Recent Posts</h3>
 						<ul class="recent-posts">
-							<li>Recent Posts</li>
 						  <?php
 						    $archive_query = new WP_Query('showposts=5');
 						    while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
@@ -21,18 +20,46 @@
 						  <?php endwhile; ?>
 						</ul>
 
-					     <ul>
-					     	<li>Archive</li>
-					<?php wp_get_archives('type=monthly'); ?>
-					     </ul>
+            <h3>Archives</h3>
+            <ul>
+              <?php wp_get_archives('type=monthly'); ?>
+            </ul>
 
-					         <ul>
-					<?php wp_list_categories( $args ); ?> 
-					     </ul>
-					     </section>
+            <?php $args = array(
+            	'show_option_all'    => '',
+            	'orderby'            => 'name',
+            	'order'              => 'ASC',
+            	'style'              => 'list',
+            	'show_count'         => 0,
+            	'hide_empty'         => 1,
+            	'use_desc_for_title' => 1,
+            	'child_of'           => 0,
+            	'feed'               => '',
+            	'feed_type'          => '',
+            	'feed_image'         => '',
+            	'exclude'            => '',
+            	'exclude_tree'       => '',
+            	'include'            => '',
+            	'hierarchical'       => true,
+            	'title_li'           => '',
+            	'show_option_none'   => __('No categories'),
+            	'number'             => null,
+            	'echo'               => 1,
+            	'depth'              => 0,
+            	'current_category'   => 0,
+            	'pad_counts'         => 0,
+            	'taxonomy'           => 'category',
+            	'walker'             => null
+            ); ?>
 
-				    <div id="main" class="eightcol first clearfix m-all t2 d2-d4" role="main">
-				    	<h1>BLOG</h1>
+            <h3>Topics</h3>
+            <ul>
+					    <?php wp_list_categories( $args ); ?> 
+					  </ul>
+					</section>
+
+				    <div id="main" class="clearfix m-all t2 d2-d4" role="main">
+				    	<h1>Blog</h1>
 				    	<div class="blog-wrap">
 				    	<div class="blog">
 				    		

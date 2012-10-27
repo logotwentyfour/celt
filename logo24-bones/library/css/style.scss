@@ -198,7 +198,7 @@ strong {
 }
 
 .slider {
-  margin-bottom: pem(10px);
+  margin-bottom: pem(18px);
   
   img {
     max-width: 100%;
@@ -250,6 +250,10 @@ a.open-navigation {
   @media only screen and (max-width: 768px) {
     display: none;
   }
+}
+
+.top-nav {
+  margin-bottom: pem(17px);
 }
 
 // (768px @ 16px)
@@ -526,6 +530,10 @@ div#kpg-backLink a {
 [role="complementary"] {
   margin-top: pem(14px);
 
+  h3 {
+    color: #A46E2A;
+  }
+
   p {
     background: $tertiary-color;
     padding: pem(34px) pem(20px);
@@ -537,24 +545,24 @@ div#kpg-backLink a {
     }
     
     a:hover, a:focus, a:active {
-      background: darken($tertiary-color,5%);
+      color: darken($tertiary-color,5%);
     }
     
   }
   ul {
     background: $tertiary-color;
-    padding: pem(34px) pem(20px);
+    padding: pem(10px) pem(20px) pem(38px) pem(20px);
     
     li {
       a, a:link, a:visited {
         border-bottom: 1px solid lighten($quaternary-color,10%);
         color: $quaternary-color;
         display: block;
-        padding: pem(10px) 0 pem(5px) 0;
+        padding: pem(14px) 0 pem(9px) 0;
       }
       
       a:hover, a:focus, a:active {
-        background: darken($tertiary-color,5%);
+        color: darken(#A46E2A,5%);
       }
     }
   }
