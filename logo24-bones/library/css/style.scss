@@ -13,6 +13,7 @@
 @import "twitter-bootstrap";
 @import "gridset";
 @import "font-awesome";
+@import "flexslider";
 
 // Compass variables for vertical rhythm
 $base-font-size: 16px;
@@ -241,14 +242,6 @@ strong {
   }
 }
 
-.slider {
-  margin-bottom: pem(17px);
-  
-  img {
-    max-width: 100%;
-  }
-}
-
 // “Navigation” link at small screens to open navigation.
 // Toggle icon for menu. Visible only on small screens.
 
@@ -256,6 +249,7 @@ strong {
 .js a.open-navigation {
   @media only screen and (max-width: 768px) {
     display: block;
+    margin-bottom: 1.0625em;
   }
 }
 a.open-navigation {

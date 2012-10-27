@@ -1,0 +1,156 @@
+/*
+ * jQuery FlexSlider v2.1
+ * http://www.woothemes.com/wooslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.wooslider-container a:active,
+.wooslider a:active,
+.wooslider-container a:focus,
+.wooslider a:focus  {outline: none;}
+.slides,
+.wooslider-control-nav,
+.wooslider-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* wooslider Necessary Styles
+*********************************/ 
+body .wooslider .slide-content {
+  margin: 0;
+  p {
+    margin: 0;
+  }
+}
+
+.slides {width: 100%;}
+.wooslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.wooslider .slides img {
+  display: block;
+  margin: 0;
+}
+.wooslider-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.wooslider .slides:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } 
+html[xmlns] .wooslider .slides { display: block; } 
+* html .wooslider .slides { height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .wooslider .slides > li:first-child { display: block; }
+
+
+/* wooslider Default Theme
+*********************************/
+.wooslider {
+  @include border-radius(0);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  zoom: 1;
+}
+
+.wooslider-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.wooslider .slides {zoom: 1;}
+
+.wooslider .carousel li {margin-right: 5px}
+
+/* Direction Nav */
+.wooslider-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}
+.wooslider-direction-nav .wooslider-next {background-position: 100% 0; right: -36px; }
+.wooslider-direction-nav .wooslider-prev {left: -36px;}
+.wooslider:hover .wooslider-next {opacity: 0.8; right: 5px;}
+.wooslider:hover .wooslider-prev {opacity: 0.8; left: 5px;}
+.wooslider:hover .wooslider-next:hover, .wooslider:hover .wooslider-prev:hover {opacity: 1;}
+.wooslider-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Pause/Play */
+.wooslider-pauseplay a  { width: 30px; height: 30px; text-indent: -9999px; background: url(../images/bg_play_pause.png) no-repeat 110% 0; position: absolute; bottom: 5px; left: 5px; opacity: 0.8; z-index: 9999; cursor: pointer; }
+.wooslider-pauseplay a:hover  { opacity: 1; }
+.wooslider-pauseplay a.wooslider-play { background-position: 0 0; }
+
+/* Control Nav */
+.wooslider-control-nav {
+  margin: 0 !important;
+  position: static;
+  width: auto !important;
+  
+  // (768px @ 16px)
+  @media only screen and (min-width: 48em) {
+    bottom: 2.5em !important;
+    position: absolute;
+    right: pem(34px);
+    top: auto !important;
+  }
+}
+
+body .wooslider.wooslider-type-slides img {
+  height: auto;
+}
+
+.wooslider-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+
+.wooslider-control-paging li a {
+  width: 1em;
+  height: 1em;
+  display: block;
+  background: $brand-color;
+  cursor: pointer;
+  text-indent: -9999px;
+  @include border-radius(20px);
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  
+  // (768px @ 16px)
+  @media only screen and (min-width: 48em) {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.wooslider-control-paging li a:hover {
+  background: darken($brand-color,10%);
+}
+
+.wooslider-control-paging li a.wooslider-active {
+  background: darken($brand-color,10%);
+  cursor: default;
+}
+
+.wooslider-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.wooslider-control-thumbs li {width: 25%; float: left; margin: 0;}
+.wooslider-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.wooslider-control-thumbs img:hover {opacity: 1;}
+.wooslider-control-thumbs .wooslider-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .wooslider-direction-nav .wooslider-prev {opacity: 1; left: 0;}
+  .wooslider-direction-nav .wooslider-next {
+  			opacity: 1;
+			float: right;
+			left: -7px;
+			top: -10px;
+
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 800px){
+
+	.wooslider-direction-nav .wooslider-next {
+  			
+			float: right;
+			left: -7px;
+			top: -10px;
+
+  }
+
+}
