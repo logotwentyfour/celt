@@ -68,8 +68,8 @@
         <h2>Centre for Environmental Learning and Training</h2>
       </hgroup>
       <ul class="social-icons">
-        <li><a href="https://www.facebook.com/celt.celt" target="_blank"><i class="icon-facebook-sign"></i> <b>Like us on Facebook</b></a></li>
-        <li><a href="https://plus.google.com/105816629404868452562/posts" target="_blank"><i class="icon-google-plus-sign"></i> <b>Add us on Google Plus</b></a></li>
+        <li><a href="https://www.facebook.com/celt.celt" title="Like us on Facebook" target="_blank"><i class="icon-facebook-sign"></i> <b>Like us on Facebook</b></a></li>
+        <li><a href="https://plus.google.com/105816629404868452562/posts" title="Add us on Google Plus" target="_blank"><i class="icon-google-plus-sign"></i> <b>Add us on Google Plus</b></a></li>
       </ul>
     </header>
     

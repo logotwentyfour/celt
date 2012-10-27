@@ -33,6 +33,15 @@
                   <span class="nav-previous"><?php previous_post_link( '%link', __( '<span>&larr;</span> <i>Previous</i>', 'twentyeleven' ) ); ?></span>
                   <span class="nav-next"><?php next_post_link( '%link', __( '<i>Next</i> <span>&rarr;</span>', 'twentyeleven' ) ); ?></span>
                 </nav>
+                
+                <ul class="share-links">
+                  <li><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" title="Share this post on Facebook" target="_blank">
+                  <i class="icon-facebook-sign"></i>
+                  <b>Share this post on Facebook</b></a></li>
+                  <li><a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" title="Share this post on Google Plus" target="_blank">
+                  <i class="icon-google-plus-sign"></i>
+                  <b>Share this post on Google Plus</b></a></li>
+                </ul>
 
 							</article> <!-- end article -->
 					

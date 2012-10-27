@@ -110,11 +110,11 @@ strong {
   .icon-facebook-sign {
     color: #506eaa; // Facebook Blue
   }
-  
+
   .icon-google-plus-sign {
     color: #bb2e24; // Google Plus Red
   }
-  
+
   a:hover, a:focus, a:active {
     .icon-facebook-sign {
       color: darken(#506eaa,5%);
@@ -131,6 +131,49 @@ strong {
   b {
     // Hide assistive text.
     @extend .visually-hidden;
+  }
+}
+
+.share-links {
+  bottom: pem(-7px);
+  float: right;
+  list-style: none;
+  margin-bottom: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  
+  a, a:link, a:visited {
+    color: #C5CABC;
+  }
+  
+  a:hover, a:focus, a:active {
+    i {
+      @include transition(all, .3s, ease-in-out);
+    }
+    .icon-facebook-sign {
+      color: #506eaa;
+    }
+    .icon-google-plus-sign {
+      color: #bb2e24;
+    }
+  }
+  
+  b {
+    // Hide assistive text.
+    @extend .visually-hidden;
+  }
+  
+  li {
+    display: inline;
+    
+    i {
+      width: auto !important;
+    }
+  }
+  
+  a, a:link, a:visited {
+    font-size: 2em;
   }
 }
 
