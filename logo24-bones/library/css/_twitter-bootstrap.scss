@@ -52,7 +52,7 @@ textarea,
 }
 
 #searchform {
-  margin: 1.5em 0;
+  margin: pem(7px) 0 pem(24px) 0;
   
   // (768px @ 16px)
   @media only screen and (min-width: 48em) {

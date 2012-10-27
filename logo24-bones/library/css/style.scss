@@ -349,12 +349,12 @@ a.open-navigation {
   font-style: italic;
   @include scale(margin-bottom, 24px, 14px);
   
-  .latest-news & {
+  .latest-news &, .archives & {
     margin-bottom: 0;
   }
 }
 
-.latest-news {
+.latest-news, .archives {
   img {
     float: left;
     margin-bottom: pem(37px);
@@ -386,6 +386,11 @@ a.open-navigation {
 .blog-wrap, .latest-news {
   background-color: #EAECE7;
   padding: 0 1.25em 1.5em 1.25em;
+  
+  h1 {
+    line-height: 1em;
+    margin-top: 1em;
+  }
   
   article {
     border-bottom: 1px solid;
@@ -422,18 +427,38 @@ a.open-navigation {
   }
 }
 
-// Previous/Next links on blog#single
-.nav-blog {
-  margin-top: 1.5em;
-  
-  a, a:link, a:visited {
-    border-bottom: 1px dashed #307900;
-  }
+.bones_page_navi {
+  margin-bottom: 0;
 }
 
-// Previous post link.
-.nav-previous {
-  margin-right: 1.25em;
+// Blog pagination
+.bones_page_navi, .nav-blog {
+  margin-top: 1.5em;
+  
+  // Hide Prev/Next text, just show arrows.
+  i {
+    @extend .visually-hidden;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  a, a:link, a:visited, .bpn-current {
+    @include border-radius(pem(16px));
+    background: darken(#EAECE7,15%);
+    display: inline-block;
+    margin-right: pem(10px);
+    height: pem(32px);
+    width: pem(32px);
+    text-align: center;
+    line-height: pem(32px);
+  }
+  
+  a:hover, a:focus, a:active, .bpn-current {
+    background: $brand-color;
+    color: #fff;
+  }
 }
 
 // List of three columns on the home page.
