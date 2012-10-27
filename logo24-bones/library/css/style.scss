@@ -615,6 +615,25 @@ div#kpg-backLink a {
   display: block;
 }
 
+// Price list.
+.price-list {
+  border-collapse: separate;
+  border-spacing: pem(1px);
+  width: 100%;
+  
+  tr {
+    td {
+      background: lighten($brand-color,35%);
+      padding: pem(11px);
+    }
+    
+    td:first-child, tr:first-child {
+      background: $brand-color;
+      color: #fff;
+    }
+  }
+}
+
 
 // Sidebar
 [role="complementary"] {
