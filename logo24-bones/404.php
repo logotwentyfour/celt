@@ -57,7 +57,7 @@
     <h1>404</h1>
     <h2>Oops! Page Not Found</h2>
   </hgroup>
-  <p>Send an email to <a href="mailto:info@domain.com">info@domain.com</a> to let us know what happened <i>or</i> Try starting again from our <a href="/">home page</a>.</p>
+  <p>Send an email to <a href="mailto:info@celtnet.org">info@celtnet.org</a> to let us know what happened <i>or</i> Try starting again from our <a href="/">home page</a>.</p>
   
 </body>
 </html>

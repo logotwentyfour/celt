@@ -177,10 +177,6 @@ strong {
   }
 }
 
-.page{
-  margin-top: 1.5em;
-}
-
 .copyright {
   margin-top: 2em;
   p {
@@ -649,9 +645,10 @@ div#kpg-backLink a {
       color: $brand-color;
     }
   }
+  
   ul {
     background: $tertiary-color;
-    padding: pem(10px) pem(20px) pem(38px) pem(20px);
+    padding: pem(20px) pem(20px) pem(38px) pem(20px);
     
     li {
       a, a:link, a:visited {
@@ -665,6 +662,10 @@ div#kpg-backLink a {
         color: darken(#A46E2A,5%);
       }
     }
+  }
+  
+  h3 + ul {
+    padding-top: pem(10px);
   }
 }
 
@@ -701,34 +702,48 @@ div#kpg-backLink a {
 }
 
 .course-index-list {
-  padding-bottom: 2em;
   
   li {
     border-bottom: 1px dashed $primary-text-color;
     @include clearfix;
-    padding: 1em 0;
+    padding: 1.5em 0;
     position: relative;
   }
   
   .date {
-    position: absolute;
-    left: 0;
-    top: pem(16px);
-    width: 14em;
+    // (1050 @ 16px)
+    @media only screen and (min-width: 65.625em) {
+      position: absolute;
+      left: 0;
+      top: pem(24px);
+      width: 14em;
+    }
   }
   .title {
-    float: left;
-    margin-left: pem(265px);
-    margin-right: pem(146px);
-    padding-right: pem(40px);
     text-transform: uppercase;
+    
+    // (1050 @ 16px)
+    @media only screen and (min-width: 65.625em) {
+      float: left;
+      margin-left: pem(265px);
+      margin-right: pem(146px);
+      padding-right: pem(40px);
+    }
   }
   
   // Book Now link
   p {
-    position: absolute;
-    right: 0;
-    top: pem(13px);
+    @include inline-block;
+    margin-bottom: 0;
+    margin-top: pem(18px);
+    
+    // (1050 @ 16px)
+    @media only screen and (min-width: 65.625em) {
+      margin-top: 0;
+      position: absolute;
+      right: 0;
+      top: pem(21px);
+    }
   }
   a, a:link, a:visited {
     background: #bce582;

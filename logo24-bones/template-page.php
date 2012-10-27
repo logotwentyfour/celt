@@ -4,8 +4,6 @@ Template Name: Page
 */
 get_header(); ?>
 
-<div class="page">
-
 <?php get_sidebar(); ?>
 
     <section role="main" class="home-content m-all t2 d2-d4">
@@ -21,7 +19,5 @@ get_header(); ?>
       <?php endif; ?>
 
     </section> <?php # /main ?>
-
-  </div> <?php //End of .page ?>
 
 <?php get_footer(); ?>
