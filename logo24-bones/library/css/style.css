@@ -2473,11 +2473,15 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
 .bones_page_navi, .nav-blog {
   margin-top: 1.5em;
 }
-/* line 443, style.scss */
+/* line 440, style.scss */
+.bones_page_navi .bpn-last-page-link a, .bones_page_navi .bpn-last-page-link a:link, .bones_page_navi .bpn-last-page-link a:visited, .nav-blog .bpn-last-page-link a, .nav-blog .bpn-last-page-link a:link, .nav-blog .bpn-last-page-link a:visited {
+  width: 4em;
+}
+/* line 450, style.scss */
 .bones_page_navi li, .nav-blog li {
   display: inline;
 }
-/* line 447, style.scss */
+/* line 454, style.scss */
 .bones_page_navi a, .bones_page_navi a:link, .bones_page_navi a:visited, .bones_page_navi .bpn-current, .nav-blog a, .nav-blog a:link, .nav-blog a:visited, .nav-blog .bpn-current {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
@@ -2492,14 +2496,14 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   text-align: center;
   line-height: 2em;
 }
-/* line 458, style.scss */
+/* line 465, style.scss */
 .bones_page_navi a:hover, .bones_page_navi a:focus, .bones_page_navi a:active, .bones_page_navi .bpn-current, .nav-blog a:hover, .nav-blog a:focus, .nav-blog a:active, .nav-blog .bpn-current {
   background: #6ba74d;
   color: #fff;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 467, style.scss */
+  /* line 474, style.scss */
   .activities-list li {
     float: left;
     margin-right: 4%;
@@ -2507,34 +2511,34 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   }
 }
 @media only screen and (min-width: 64em) {
-  /* line 467, style.scss */
+  /* line 474, style.scss */
   .activities-list li {
     margin-right: 3%;
     width: 30%;
   }
 }
 
-/* line 484, style.scss */
+/* line 491, style.scss */
 .gallery-wrap {
   background-color: #DCF1FF;
   padding: 1.5em 0;
 }
-/* line 488, style.scss */
+/* line 495, style.scss */
 .gallery-wrap img {
   height: auto;
 }
-/* line 494, style.scss */
+/* line 501, style.scss */
 .gallery-wrap a img, .gallery-wrap a:link img, .gallery-wrap a:visited img {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 499, style.scss */
+/* line 506, style.scss */
 .gallery-wrap figcaption {
   color: #0075c3;
 }
-/* line 504, style.scss */
+/* line 511, style.scss */
 .gallery-wrap a:hover img, .gallery-wrap a:focus img, .gallery-wrap a:active img {
   -webkit-box-shadow: 0px 1px 7px #333333;
   -moz-box-shadow: 0px 1px 7px #333333;
@@ -2543,38 +2547,38 @@ a.open-navigation:hover, a.open-navigation:active, a.open-navigation:focus {
   -moz-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
 }
-/* line 508, style.scss */
+/* line 515, style.scss */
 .gallery-wrap a:hover figcaption, .gallery-wrap a:focus figcaption, .gallery-wrap a:active figcaption {
   color: #0065a9;
 }
-/* line 514, style.scss */
+/* line 521, style.scss */
 .gallery-wrap figure {
   padding: 0 1.5em;
   width: 100%;
 }
 @media only screen and (min-width: 30em) {
-  /* line 514, style.scss */
+  /* line 521, style.scss */
   .gallery-wrap figure {
     width: 50%;
   }
 }
 @media only screen and (min-width: 62.5em) {
-  /* line 514, style.scss */
+  /* line 521, style.scss */
   .gallery-wrap figure {
     width: 33.3%;
   }
 }
 
-/* line 529, style.scss */
+/* line 536, style.scss */
 .gallery-sub-pictures-container .gallery-heading {
   display: none;
 }
 
-/* line 534, style.scss */
+/* line 541, style.scss */
 div#kpg-album-description {
   padding: 0;
 }
-/* line 537, style.scss */
+/* line 544, style.scss */
 div#kpg-album-description #kpg-title {
   color: #444444;
   font-style: italic;
@@ -2582,12 +2586,12 @@ div#kpg-album-description #kpg-title {
   margin-bottom: 1.5em;
 }
 
-/* line 546, style.scss */
+/* line 553, style.scss */
 div#kpg-backLink {
   margin: 0;
 }
 
-/* line 551, style.scss */
+/* line 558, style.scss */
 div#kpg-backLink a {
   color: #0075c3;
   float: none;
@@ -2597,77 +2601,82 @@ div#kpg-backLink a {
   margin-bottom: 0;
   margin-left: 2.5em;
 }
-/* line 560, style.scss */
+/* line 567, style.scss */
 div#kpg-backLink a:hover, div#kpg-backLink a:focus, div#kpg-backLink a:active {
   color: #0065a9;
 }
 @media only screen and (min-width: 30em) {
-  /* line 551, style.scss */
+  /* line 558, style.scss */
   div#kpg-backLink a {
     float: right;
     margin-right: 2.5em;
   }
 }
 
-/* line 572, style.scss */
+/* line 579, style.scss */
 .gallery-sub-pictures-container img {
   margin-bottom: 1.5em !important;
   padding: 0;
   display: block;
 }
 
-/* line 580, style.scss */
+/* line 587, style.scss */
 [role="complementary"] {
   margin-top: 0.875em;
 }
-/* line 583, style.scss */
+/* line 590, style.scss */
 [role="complementary"] h3 {
   color: #A46E2A;
 }
-/* line 587, style.scss */
+/* line 594, style.scss */
 [role="complementary"] p {
   background: #ffed91;
   padding: 2.125em 1.25em;
   color: #A46E2A;
 }
-/* line 592, style.scss */
+/* line 599, style.scss */
 [role="complementary"] p a {
   border-bottom: 1px dashed #307900;
   color: #7A7A7A;
   white-space: nowrap;
 }
-/* line 598, style.scss */
+/* line 605, style.scss */
 [role="complementary"] p a:hover, [role="complementary"] p a:focus, [role="complementary"] p a:active {
   color: #6ba74d;
 }
-/* line 602, style.scss */
+/* line 609, style.scss */
 [role="complementary"] ul {
   background: #ffed91;
   padding: 0.625em 1.25em 2.375em 1.25em;
 }
-/* line 607, style.scss */
+/* line 614, style.scss */
 [role="complementary"] ul li a, [role="complementary"] ul li a:link, [role="complementary"] ul li a:visited {
   border-bottom: 1px solid #cb8836;
   color: #a46e2a;
   display: block;
   padding: 0.875em 0 0.5625em 0;
 }
-/* line 614, style.scss */
+/* line 621, style.scss */
 [role="complementary"] ul li a:hover, [role="complementary"] ul li a:focus, [role="complementary"] ul li a:active {
   color: #906025;
 }
 
-/* line 622, style.scss */
+/* line 629, style.scss */
+.cat-item {
+  text-transform: capitalize;
+}
+
+/* line 634, style.scss */
 .p404 {
   padding-top: 5em;
   text-align: center;
 }
-/* line 626, style.scss */
+/* line 638, style.scss */
 .p404 h1 {
   font-size: 8.3125em;
   line-height: 1.08271em;
 }
-/* line 630, style.scss */
+/* line 642, style.scss */
 .p404 h2 {
   font-size: 1.375em;
   line-height: 2.18182em;
@@ -2675,23 +2684,23 @@ div#kpg-backLink a:hover, div#kpg-backLink a:focus, div#kpg-backLink a:active {
   line-height: 1em;
   margin-bottom: 1.5em;
 }
-/* line 637, style.scss */
+/* line 649, style.scss */
 .p404 p {
   font-size: 1em;
   line-height: 1.5em;
   color: #6ba74d;
   line-height: 1.25em;
 }
-/* line 643, style.scss */
+/* line 655, style.scss */
 .p404 i {
   display: block;
 }
 
-/* line 648, style.scss */
+/* line 660, style.scss */
 .course-index-list {
   padding-bottom: 2em;
 }
-/* line 651, style.scss */
+/* line 663, style.scss */
 .course-index-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -2699,14 +2708,14 @@ div#kpg-backLink a:hover, div#kpg-backLink a:focus, div#kpg-backLink a:active {
   padding: 1em 0;
   position: relative;
 }
-/* line 658, style.scss */
+/* line 670, style.scss */
 .course-index-list .date {
   position: absolute;
   left: 0;
   top: 1em;
   width: 14em;
 }
-/* line 664, style.scss */
+/* line 676, style.scss */
 .course-index-list .title {
   float: left;
   margin-left: 16.5625em;
@@ -2714,13 +2723,13 @@ div#kpg-backLink a:hover, div#kpg-backLink a:focus, div#kpg-backLink a:active {
   padding-right: 2.5em;
   text-transform: uppercase;
 }
-/* line 673, style.scss */
+/* line 685, style.scss */
 .course-index-list p {
   position: absolute;
   right: 0;
   top: 0.8125em;
 }
-/* line 678, style.scss */
+/* line 690, style.scss */
 .course-index-list a, .course-index-list a:link, .course-index-list a:visited {
   background: #bce582;
   border-bottom: none;
@@ -2728,16 +2737,16 @@ div#kpg-backLink a:hover, div#kpg-backLink a:focus, div#kpg-backLink a:active {
   display: block;
   padding: 0.1875em 1em;
 }
-/* line 685, style.scss */
+/* line 697, style.scss */
 .course-index-list a:hover, .course-index-list a:focus, .course-index-list a:active {
   background: #aade60;
 }
 
-/* line 690, style.scss */
+/* line 702, style.scss */
 .course-show-list {
   padding-bottom: 2em;
 }
-/* line 693, style.scss */
+/* line 705, style.scss */
 .course-show-list li {
   border-bottom: 1px dashed #444444;
   overflow: hidden;
@@ -2745,17 +2754,17 @@ div#kpg-backLink a:hover, div#kpg-backLink a:focus, div#kpg-backLink a:active {
   padding: 1em 0;
   position: relative;
 }
-/* line 700, style.scss */
+/* line 712, style.scss */
 .course-show-list .date {
   font-size: 0.875em;
   line-height: 1.71429em;
 }
-/* line 704, style.scss */
+/* line 716, style.scss */
 .course-show-list .info {
   margin-bottom: 0;
 }
 
-/* line 710, style.scss */
+/* line 722, style.scss */
 [role='contentinfo'] {
   clear: left;
   float: left;

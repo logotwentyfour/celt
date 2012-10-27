@@ -10,7 +10,7 @@
 				    
 				    <?php if (is_category()) { ?>
 					    <h1>
-						    <span><?php _e("Posts Categorized:", "bonestheme"); ?></span> <?php single_cat_title(); ?>
+						    <span><?php _e("Posts by Topic:", "bonestheme"); ?></span> <?php single_cat_title(); ?>
 				    	</h1>
 				    
 				    <?php } elseif (is_tag()) { ?> 

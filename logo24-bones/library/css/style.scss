@@ -435,6 +435,13 @@ a.open-navigation {
 .bones_page_navi, .nav-blog {
   margin-top: 1.5em;
   
+  // Widen the circle for the 'Last' link
+  .bpn-last-page-link {
+    a, a:link, a:visited {
+      width: 4em;
+    }
+  }
+  
   // Hide Prev/Next text, just show arrows.
   i {
     @extend .visually-hidden;
@@ -616,6 +623,11 @@ div#kpg-backLink a {
       }
     }
   }
+}
+
+// Captialise categories in the sidebar list.
+.cat-item {
+  text-transform: capitalize;
 }
 
 // 404 Styles
