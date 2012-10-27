@@ -6,8 +6,8 @@
 	  </div>
 	</form>
 	
-	<h3>Recent Posts</h3>
-	<ul class="recent-posts">
+	<h3 class="side-title">Recent Posts</h3>
+	<ul>
 	  <?php
 	    $archive_query = new WP_Query('showposts=5');
 	    while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
@@ -15,7 +15,7 @@
 	  <?php endwhile; ?>
 	</ul>
 
-  <h3>Archives</h3>
+  <h3 class="side-title">Archives</h3>
   <ul>
     <?php wp_get_archives('type=monthly'); ?>
   </ul>
@@ -47,7 +47,7 @@
   	'walker'             => null
   ); ?>
 
-  <h3>Topics</h3>
+  <h3 class="side-title">Topics</h3>
   <ul>
     <?php wp_list_categories( $args ); ?> 
   </ul>

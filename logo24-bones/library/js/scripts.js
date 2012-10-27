@@ -14,10 +14,14 @@ jQuery(document).ready(function($) {
   $(".entry-content").fitVids();
   
   // Toggle navigation visibility on small screens and the toggle icon.
-  // And rotate toggle icon
   $(".open-navigation").click(function () {
-    //$('#menu-main').toggleClass('show');
-    $('.top-nav').fadeToggle(100, "linear");
+    $(".top-nav").fadeToggle(100, "linear");
+      return false;
+  });
+  
+  // Toggle sub navs when headings are clicked
+  $(".side-title").click(function () {
+    $(this).next().fadeToggle(100, "linear");
       return false;
   });
 }); /* end of as page load scripts */

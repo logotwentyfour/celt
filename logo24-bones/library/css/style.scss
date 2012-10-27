@@ -34,9 +34,18 @@ p, ul, ol {
 }
 
 [role="main"] {
-  img {max-width: 100%;
+  
+  h1 {
+    line-height: 1em;
+    @include scale(margin-top, 13px, 24px);
+    @include scale(margin-bottom, 11px, 24px);
+  }
+  
+  img {
+    max-width: 100%;
     display: block;
-    margin: 0 auto;}
+    margin: 0 auto;
+  }
   ul {
     list-style: disc;
   }
@@ -408,10 +417,16 @@ a.open-navigation {
       border-bottom: none;
       color: #374b1d;
       @include inline-block;
+      margin-top: pem(17px);
       padding: pem(3px) pem(16px);
-      position: absolute;
-      right: 0;
-      bottom: pem(5px);
+      
+      // (768px @ 16px)
+      @media only screen and (min-width: 48em) {
+        bottom: pem(5px);
+        right: 0;
+        margin-top: 0;
+        position: absolute;
+      }
     }
     
     a:hover, a:focus, a:active {
@@ -495,6 +510,7 @@ a.open-navigation {
   a, a:link, a:visited, .bpn-current {
     @include border-radius(pem(16px));
     background: darken(#EAECE7,15%);
+    border: none;
     display: inline-block;
     margin-right: pem(10px);
     height: pem(32px);
@@ -656,6 +672,11 @@ div#kpg-backLink a {
     padding: pem(34px) pem(20px);
     color: #A46E2A;
     
+    // (768px @ 16px)
+    @media only screen and (max-width: 48em) {
+      display: none;
+    }
+    
     a {
       border-bottom: 1px dashed #307900;
       color: #7A7A7A;
@@ -687,6 +708,52 @@ div#kpg-backLink a {
   
   h3 + ul {
     padding-top: pem(10px);
+  }
+}
+
+// Hide sub menus on small screen if js supported.
+.js {
+  [role="complementary"] {
+    h3 {
+      background: $tertiary-color;
+      cursor: pointer;
+      padding: 1em 1.25em;
+      position: relative;
+      
+      &:hover {
+        background: darken($tertiary-color,5%);
+      }
+      
+      &:before {
+        content: "\2192";
+        position: absolute;
+        right: 1.25em;
+      }
+      
+      // (768px @ 16px)
+      @media only screen and (min-width: 48em) {
+        background: transparent;
+        cursor: default;
+        padding: 0;
+        
+        &:hover {
+          background: transparent;
+        }
+        
+        &:before {
+          content: "";
+        }
+      }
+    }
+    
+    ul {
+      display: none;
+      // (768px @ 16px)
+      @media only screen and (min-width: 48em) {
+        display: block !important;
+        opacity: 1;
+      }
+    }
   }
 }
 
