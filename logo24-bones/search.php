@@ -3,8 +3,10 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
+				  
+				  <?php get_sidebar(); ?>
 			
-					<div id="main" class="eightcol first clearfix" role="main">
+					<div id="main" class="clearfix m-all t2 d2-d4" role="main">
 				
 						<h1 class="archive-title"><span>Search Results for:</span> <?php echo esc_attr(get_search_query()); ?></h1>
 
@@ -61,8 +63,6 @@
 					    <?php endif; ?>
 			
 				    </div> <!-- end #main -->
-    			
-    			    <?php get_sidebar(); ?>
     			
     			</div> <!-- end #inner-content -->
     

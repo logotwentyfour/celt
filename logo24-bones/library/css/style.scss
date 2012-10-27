@@ -398,6 +398,11 @@ a.open-navigation {
       padding-top: pem(18px);
     }
     
+    // For single posts, don't add top padding
+    &.single:first-child {
+      padding-top: 0;
+    }
+    
     h2 {
       @include scale(margin-bottom, 7px, 18px);
     }
@@ -415,6 +420,20 @@ a.open-navigation {
   p:last-child {
     margin-bottom: 0;
   }
+}
+
+// Previous/Next links on blog#single
+.nav-blog {
+  margin-top: 1.5em;
+  
+  a, a:link, a:visited {
+    border-bottom: 1px dashed #307900;
+  }
+}
+
+// Previous post link.
+.nav-previous {
+  margin-right: 1.25em;
 }
 
 // List of three columns on the home page.

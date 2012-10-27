@@ -8,7 +8,9 @@ get_header(); ?>
       <img src="/wp-content/uploads/2012/10/celt-slider-01@1.jpg"/>
     </div>
 
-<?php get_sidebar(); ?>
+    <section class="m-all t1 d1" role="complementary">
+      <p>At CELT we organise environmental <a href="/courses">Courses</a>, manage our very own <a href="/about/tree-nursery">Tree Nursery</a> and <a href="/blog">Blog</a> about all things green in Ireland and beyond.</p>
+    </section>
 
     <section role="main" class="home-content m-all t2 d2-d4">
       

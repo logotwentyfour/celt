@@ -3,32 +3,10 @@
 			<div id="content">
 			
 				<div id="inner-content" class="wrap clearfix">
-					<section class="m-all t1 d1" role="complementary">
-					  <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-  					  <div>
-  					    <input type="text" name="s" id="s"/>
-  					    <input type="submit" id="searchsubmit" value="Search" class="btn" />
-  					  </div>
-  					</form>
-						<ul class="recent-posts">
-							<li>Recent Posts</li>
-						  <?php
-						    $archive_query = new WP_Query('showposts=5');
-						    while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
-						  <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></li>
-						  <?php endwhile; ?>
-						</ul>
-					     <ul>
-					     	<li>Archive</li>
-					<?php wp_get_archives('type=monthly'); ?>
-					     </ul>
-
-					         <ul>
-					<?php wp_list_categories( $args ); ?> 
-					     </ul>
-					     </section>
+					
+					<?php get_sidebar(); ?>
 				
-				    <div id="main" class="eightcol first clearfix m-all t2 d2-d4" role="main">
+				    <div id="main" class="clearfix m-all t2 d2-d4" role="main">
 				    	<div class="blog-wrap">
 				    	<div class="blog">
 				

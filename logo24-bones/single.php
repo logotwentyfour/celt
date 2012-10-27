@@ -2,62 +2,38 @@
 			
 			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
-					<section class="m-all t1 d1" role="complementary">
-					  <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-  					  <div>
-  					    <input type="text" name="s" id="s"/>
-  					    <input type="submit" id="searchsubmit" value="Search" class="btn" />
-  					  </div>
-  					</form>
-						<ul class="recent-posts">
-							<li>Recent Posts</li>
-						  <?php
-						    $archive_query = new WP_Query('showposts=5');
-						    while ($archive_query->have_posts()) : $archive_query->the_post(); ?>
-						  <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></li>
-						  <?php endwhile; ?>
-						</ul>
-					     <ul>
-					     	<li>Archives</li>
-					<?php wp_get_archives('type=monthly'); ?>
-					     </ul>
-					    
-					     <ul>
-					<?php wp_list_categories( $args ); ?> 
-					     </ul>
-					     </section>
-					     
-				
-					<div id="main" class="eightcol first clearfix m-all t2 d2-d4" role="main">
+        <?php get_sidebar(); ?>
+
+					<div id="main" class="clearfix m-all t2 d2-d4" role="main">
 						<div class="blog-wrap">
 				    	<div class="blog">
 
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<div class="blog-wrap">
+							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix single'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<header class="article-header">
 							
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 							
-									<p class="byline vcard"><?php _e("Posted", "bonestheme"); ?> <time class="updated" datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <span class="author"><?php the_author_posts_link(); ?></span> <span class="amp">&amp;</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+									<p class="byline vcard">
+						        Published by
+						        <span class="author"><?php the_author(); ?></span>
+						        <time class="updated" datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(get_option('date_format')); ?></time>
+						        <br>Topics:
+						        <?php the_category(', '); ?></p>
 						
 								</header> <!-- end article header -->
 					
 								<section class="entry-content clearfix" itemprop="articleBody">
 									<?php the_content(); ?>
 								</section> <!-- end article section -->
-						
-								<footer class="article-footer">
-			
-									<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ', ', '</p>'); ?>
-							
-								</footer> <!-- end article footer -->
-					
-								
-					
+
+                <nav class="nav-blog">
+                  <span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
+                  <span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
+                </nav>
+
 							</article> <!-- end article -->
 					
 						<?php endwhile; ?>			
