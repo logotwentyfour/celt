@@ -3,12 +3,15 @@
       <nav>
         <?php bones_footer_links(); ?>
       </nav>
-      <div class="copyright"><p>&copy;CELT 2012. Registered Charity CHY 14519</p>
-        <p>To sponsor projects, programmes and events <a href="/contact-us/">Contact Us.</a></p>
-        <p>Sponsors benefit from media coverage and advertising in our marketing material.</p>
-        <p>CELT, Tuamgraney, Scariff, Co.Clare. Phone: <span class="tel">+353 640 765</span>. Email: <a href="mailto:info@celtnet.org">info@celtnet.org</a></p>
-
-      </div>
+      <?php
+        query_posts('p=771');
+        if(have_posts()):
+          while(have_posts()): the_post();
+            the_content();
+          endwhile;
+        endif;
+        wp_reset_query();
+      ?>
     </footer>
   
   </div> <!-- .wrapper -->

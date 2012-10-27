@@ -40,6 +40,10 @@ p, ul, ol {
   ul {
     list-style: disc;
   }
+  
+  a, a:link, a:visited {
+    border-bottom: 1px dashed #307900;
+  }
 }
 
 p, ul li {
@@ -443,6 +447,10 @@ a.open-navigation {
     
     h2 {
       @include scale(margin-bottom, 7px, 18px);
+      
+      a, a:link, a:visited {
+        border: none;
+      }
     }
     
     img {

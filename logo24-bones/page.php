@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   
-   <section role="main" class="home-content m-all t2 d2-d4">
+   <section role="main" class="m-all t2 d2-d4">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
     <section role="main">
