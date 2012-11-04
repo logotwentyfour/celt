@@ -888,6 +888,12 @@ div#kpg-backLink a {
 // IE6 is semi-supported by way of a Chrome frame update prompt.
 // and @malarkey's Universal stylesheet.
 
+.lt-ie8 {
+  .menu-item-660 {
+    float: none;
+  }
+}
+
 /*.lt-ie9 {
 
 }*/
