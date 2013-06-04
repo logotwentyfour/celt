@@ -65,7 +65,7 @@
             <img src="<?php bloginfo('template_directory'); ?>/library/images/logo.png" alt="CELT" class="visually-hidden"/>
           </a>
         </h1>
-        <h2>Centre for Environmental Learning and Training</h2>
+        <h2><?php bloginfo('description'); ?></h2>
       </hgroup>
       <ul class="social-icons">
         <li><a href="https://www.facebook.com/celt.celt" title="Like us on Facebook" target="_blank"><i class="icon-facebook-sign"></i> <b>Like us on Facebook</b></a></li>
