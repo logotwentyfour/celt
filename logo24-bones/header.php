@@ -39,8 +39,6 @@
   <!-- end of wordpress head -->
   
   <!--[if ! lte IE 6]><!-->
-  <!-- Gridset hosted CSS goes here in development -->
-  <link href="https://get.gridsetapp.com/10484/" rel="stylesheet" />
   <!--<![endif]-->
   
   <!--[if lte IE 6]>

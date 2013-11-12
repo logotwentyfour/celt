@@ -151,47 +151,7 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 // Changing excerpt length - only works with AUTO excerpt
 add_filter('excerpt_length', 'new_excerpt_length');
 function new_excerpt_length($length) {
-    return 30
-    ;
-}
-
-add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
-
-function my_mce_buttons_2( $buttons ) {
-    array_unshift( $buttons, 'styleselect' );
-    return $buttons;
-}
-
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init' );
-
-function my_mce_before_init( $settings ) {
-
-    $style_formats = array(
-    	array(
-    		'title' => 'Button',
-    		'selector' => 'a',
-    		'classes' => 'button'
-    	),
-        array(
-        	'title' => 'Callout Box',
-        	'block' => 'div',
-        	'classes' => 'callout',
-        	'wrapper' => true
-        ),
-        array(
-        	'title' => 'Bold Red Text',
-        	'inline' => 'span',
-        	'styles' => array(
-        		'color' => '#f00',
-        		'fontWeight' => 'bold'
-        	)
-        )
-    );
-
-    $settings['style_formats'] = json_encode( $style_formats );
-
-    return $settings;
-
+    return 30;
 }
 
 ?>
