@@ -111,11 +111,24 @@ strong {
   }
 }
 
+
+
+
 .social-icons {
   position: absolute;
   right: pem(-8px);
   top: pem(10px);
-  
+
+   // (268px @ 16px) (Pushes social icons below logo to stop them both overlapping and very small screen widths)
+  @media only screen and (max-width: 16.75em){
+    position: static;
+    margin-bottom: 0;
+    margin-left: 3em;
+        li {
+          display: inline
+        } 
+  }
+
   // (880px @ 16px)
   @media only screen and (min-width: 55em) {
     top: pem(30px);
@@ -147,6 +160,7 @@ strong {
     @extend .visually-hidden;
   }
 }
+
 
 .share-links {
   bottom: pem(-7px);
@@ -873,6 +887,12 @@ div#kpg-backLink a {
 // Fix IE7, 8 and 9
 // IE6 is semi-supported by way of a Chrome frame update prompt.
 // and @malarkey's Universal stylesheet.
+
+.lt-ie8 {
+  .menu-item-660 {
+    float: none;
+  }
+}
 
 /*.lt-ie9 {
 
